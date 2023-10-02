@@ -1,3 +1,4 @@
+import Script from "next/script";
 import Newsletter from "@/components/Newsletter";
 import "../styles/globals.css";
 import Nav from "@/components/Nav";
@@ -25,7 +26,17 @@ const RootLayout = ({ children }) => {
           defer
           src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
         ></script>
-        {/* Add more meta tags if needed */}
+        {/* <!-- Google tag (gtag.js) --> */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-P52QKLDNMS" />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-P52QKLDNMS');
+        `}
+        </Script>
       </head>
 
       <body>
