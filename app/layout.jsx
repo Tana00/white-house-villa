@@ -25,16 +25,6 @@ const RootLayout = ({ children }) => {
           defer
           src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
         ></script>
-        {/* <!-- Google tag (gtag.js) --> */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-7CCMNTEHC0"
-        ></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-7CCMNTEHC0');
-        </script>
         {/* Add more meta tags if needed */}
       </head>
 
