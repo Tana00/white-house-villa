@@ -1,13 +1,10 @@
 "use client";
-import React, { useState } from "react";
-// import pic1 from "../../public/assets/gallery/pic1.webp";
+import React from "react";
 import pic2 from "../../public/assets/gallery/pic2.webp";
 import pic3 from "../../public/assets/gallery/pic3.webp";
 import pic4 from "../../public/assets/gallery/pic4.webp";
 import pic5 from "../../public/assets/gallery/pic5.webp";
 import pic6 from "../../public/assets/gallery/pic6.webp";
-import pic8 from "../../public/assets/airbnb.png";
-import pic9 from "../../public/assets/booking.png";
 import { LuBedDouble, LuMicrowave } from "react-icons/lu";
 import { MdOutlineSoupKitchen, MdOutlineBathtub } from "react-icons/md";
 import { PiTelevisionBold } from "react-icons/pi";
@@ -16,9 +13,8 @@ import { BsPersonWorkspace } from "react-icons/bs";
 import { RxDimensions } from "react-icons/rx";
 import { GiCctvCamera } from "react-icons/gi";
 import { FaAirbnb } from "react-icons/fa";
-import { TbBrandBooking } from "react-icons/tb";
 import Image from "next/image";
-import { BsFillEyeFill, BsFillStarFill } from "react-icons/bs";
+import { BsFillEyeFill } from "react-icons/bs";
 
 export const features = [
   {

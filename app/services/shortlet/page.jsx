@@ -1,7 +1,6 @@
 "use client";
 import FAQ from "@/components/FAQ";
 import { features } from "../../explore/page";
-import pic1 from "../../../public/assets/gallery/dining.webp";
 
 const Shortlet = () => {
   return (
