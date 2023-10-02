@@ -63,13 +63,28 @@ const apartmentPictures = [
 ];
 
 function useWindowSize() {
-  if (typeof window !== "undefined") {
-    const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
-  }
+  const isClient = typeof window === "object";
+
+  const [size, setSize] = useState(
+    isClient ? [window.innerHeight, window.innerWidth] : [0, 0]
+  );
+
   useEffect(() => {
+    if (!isClient) {
+      // If running on the server, return an empty array
+      return;
+    }
+
     const handleResize = () => setSize([window.innerHeight, window.innerWidth]);
+
     window.addEventListener("resize", handleResize);
-  }, []);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [isClient]);
+
   return size;
 }
 
