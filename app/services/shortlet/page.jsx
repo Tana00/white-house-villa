@@ -50,11 +50,11 @@ const Shortlet = () => {
       </div>
 
       <div className="my-10 md:my-20 w-full sm:w-10/12 md:w-4/5 lg:w-3/4 mx-auto flex flex-col lg:flex-row items-center justify-between">
-        <div className="text-center lg:text-left w-4/5 lg:w-full mx-auto pr-10">
-          <p className="text-center lg:text-left text-sm font-semibold text-primary-green uppercase">
+        <div className="text-left w-4/5 lg:w-full mx-auto pr-10">
+          <p className="text-left text-sm font-semibold text-primary-green uppercase">
             Browse | Book | Go
           </p>
-          <h3 className="text-center lg:text-left text-3xl md:text-4xl font-semibold mt-2 text-[#040C07]">
+          <h3 className="text-left text-3xl md:text-4xl font-semibold mt-2 text-[#040C07]">
             Luxurious 3 bed house in Mapperley, United Kingdom
           </h3>
           <p className="text-[16px] leading-7 text-[#484848] my-6">
@@ -70,7 +70,7 @@ const Shortlet = () => {
             easy to whip up a delicious meal.
           </p>
         </div>
-        <div className="h-[300px] lg:h-[500px] w-full">
+        <div className="h-[300px] lg:h-[500px] w-full my-8 md:mt-0">
           <img
             src="https://a0.muscache.com/im/pictures/miso/Hosting-977242512291600380/original/047d78df-bed0-4040-a20e-757272f4b0e6.jpeg"
             alt="dining"
@@ -87,11 +87,11 @@ const Shortlet = () => {
             className="rounded h-full w-full object-cover"
           />
         </div>
-        <div className="text-center lg:text-left w-4/5 lg:w-full mx-auto pl-10">
-          <p className="text-center lg:text-left text-sm font-semibold text-primary-green uppercase">
+        <div className="text-left w-4/5 lg:w-full mx-auto pl-10 my-8 md:mt-0">
+          <p className="text-left text-sm font-semibold text-primary-green uppercase">
             Why Us
           </p>
-          <h3 className="text-center lg:text-left text-3xl md:text-4xl font-semibold mt-2 text-[#040C07]">
+          <h3 className="text-left text-3xl md:text-4xl font-semibold mt-2 text-[#040C07]">
             Why White House Villa
           </h3>
           <p className="text-[16px] leading-7 text-[#484848] my-6">

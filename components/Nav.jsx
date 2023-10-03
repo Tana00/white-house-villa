@@ -98,6 +98,7 @@ const Nav = () => {
       services: false,
       company: false,
     });
+    setIsOpen(false);
   }, [pathname]);
 
   // toggle dropdown display
@@ -149,8 +150,8 @@ const Nav = () => {
               className={`${
                 activeSection === "home"
                   ? "text-primary-green"
-                  : "text-[#040C07] hover:text-primary-green px-4"
-              }`}
+                  : "text-[#040C07] hover:text-primary-green"
+              } px-4`}
             >
               Home
             </a>
@@ -160,8 +161,8 @@ const Nav = () => {
               className={`${
                 includesAny
                   ? "text-primary-green"
-                  : "text-[#040C07] hover:text-primary-green px-4"
-              } flex items-center cursor-pointer no-underline hover:no-underline transition-colors duration-100`}
+                  : "text-[#040C07] hover:text-primary-green"
+              } px-4 flex items-center cursor-pointer no-underline hover:no-underline transition-colors duration-100`}
               onClick={() => toggleDropdown("services")}
             >
               <span>Services</span>
@@ -197,7 +198,7 @@ const Nav = () => {
                             pathname?.includes(menu?.href)
                               ? "text-[#226E46] font-medium"
                               : "text-[#040C07]"
-                          } px-5 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer`}
+                          } px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer`}
                         >
                           <Image
                             src={menu?.icon}
@@ -221,8 +222,8 @@ const Nav = () => {
               className={`${
                 activeSection?.includes("short-let", "dressing", "photo-shoot")
                   ? "text-primary-green"
-                  : "text-[#040C07] hover:text-primary-green px-4"
-              } flex items-center cursor-pointer no-underline hover:no-underline transition-colors duration-100`}
+                  : "text-[#040C07] hover:text-primary-green"
+              } px-4 flex items-center cursor-pointer no-underline hover:no-underline transition-colors duration-100`}
               onClick={() => toggleDropdown("company")}
             >
               <span>Company</span>
@@ -262,7 +263,7 @@ const Nav = () => {
                           activeSection?.includes(menu?.href)
                             ? "text-[#226E46] font-medium"
                             : "text-[#040C07]"
-                        } px-5 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer`}
+                        } px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer`}
                       >
                         <Image
                           src={menu?.icon}
@@ -287,8 +288,8 @@ const Nav = () => {
               className={`${
                 activeSection === "explore"
                   ? "text-primary-green"
-                  : "text-[#040C07] hover:text-primary-green px-4"
-              }`}
+                  : "text-[#040C07] hover:text-primary-green"
+              } px-4`}
             >
               Explore Property
             </a>
@@ -300,8 +301,8 @@ const Nav = () => {
                 className={`${
                   pathname === "/attractions"
                     ? "text-primary-green"
-                    : "text-[#040C07] hover:text-primary-green px-4 cursor-pointer"
-                }`}
+                    : "text-[#040C07] hover:text-primary-green cursor-pointer"
+                } px-4`}
               >
                 Attractions
               </p>
@@ -349,15 +350,15 @@ const Nav = () => {
           )}
         </button>
         <ul className="list-none grid grid-cols-1 gap-8 text-base mt-6">
-          <li className="border-b border-gray-200 pb-2 pl-4">
+          <li className="border-b border-gray-200 pb-2">
             <a
               href="/#home"
               onClick={() => scrollToSection("home")}
               className={`${
                 activeSection === "home"
                   ? "text-primary-green"
-                  : "text-[#040C07] hover:text-primary-green px-4"
-              }`}
+                  : "text-[#040C07] hover:text-primary-green"
+              } px-4`}
             >
               Home
             </a>
@@ -367,8 +368,8 @@ const Nav = () => {
               className={`${
                 includesAny
                   ? "text-primary-green"
-                  : "text-[#040C07] hover:text-primary-green px-4"
-              } flex items-center cursor-pointer no-underline hover:no-underline transition-colors duration-100`}
+                  : "text-[#040C07] hover:text-primary-green"
+              } px-4 flex items-center cursor-pointer no-underline hover:no-underline transition-colors duration-100`}
               onClick={() => toggleDropdown("services")}
             >
               <span>Services</span>
@@ -427,8 +428,8 @@ const Nav = () => {
               className={`${
                 activeSection?.includes("short-let", "dressing", "photo-shoot")
                   ? "text-primary-green"
-                  : "text-[#040C07] hover:text-primary-green px-4"
-              } flex items-center cursor-pointer no-underline hover:no-underline transition-colors duration-100`}
+                  : "text-[#040C07] hover:text-primary-green"
+              } px-4 flex items-center cursor-pointer no-underline hover:no-underline transition-colors duration-100`}
               onClick={() => toggleDropdown("company")}
             >
               <span>Company</span>
@@ -468,7 +469,7 @@ const Nav = () => {
                           activeSection?.includes(menu?.href)
                             ? "text-[#226E46] font-medium"
                             : "text-[#040C07]"
-                        } px-5 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer`}
+                        } px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer`}
                       >
                         <Image
                           src={menu?.icon}
@@ -492,8 +493,8 @@ const Nav = () => {
           className={`${
             activeSection === "about"
               ? "text-primary-green"
-              : "text-[#040C07] hover:text-primary-green px-4"
-          }`}
+              : "text-[#040C07] hover:text-primary-green"
+          } px-4`}
         >
           About Us
         </a> */}
@@ -504,23 +505,26 @@ const Nav = () => {
               className={`${
                 activeSection === "explore"
                   ? "text-primary-green"
-                  : "text-[#040C07] hover:text-primary-green px-4"
-              }`}
+                  : "text-[#040C07] hover:text-primary-green"
+              } px-4`}
             >
               Explore Property
             </a>
           </li>
-          {/* <a
-          href="#how-it-works"
-          onClick={() => scrollToSection("how-it-works")}
-          className={`${
-            activeSection === "how-it-works"
-              ? "text-primary-green"
-              : "text-[#040C07] hover:text-primary-green px-4"
-          }`}
-        >
-          How It Works
-        </a> */}
+          <Link href="/attractions">
+            <li>
+              <p
+                onClick={() => scrollToSection("how-it-works")}
+                className={`${
+                  pathname === "/attractions"
+                    ? "text-primary-green"
+                    : "text-[#040C07] hover:text-primary-green"
+                } px-4`}
+              >
+                Attractions
+              </p>
+            </li>
+          </Link>
           <li className="ml-4">
             <a
               href="/#contact"
@@ -528,8 +532,8 @@ const Nav = () => {
               className={`${
                 activeSection === "contact"
                   ? "text-primary-green"
-                  : "text-white bg-primary-green px-4 py-2 rounded-md hover:bg-transparent hover:text-primary-green hover:border hover:border-primary-green hover:transition duration-300 ease-in-out"
-              }`}
+                  : "text-white bg-primary-green py-2 rounded-md hover:bg-transparent hover:text-primary-green hover:border hover:border-primary-green hover:transition duration-300 ease-in-out"
+              } px-4`}
             >
               Contact Us
             </a>

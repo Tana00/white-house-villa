@@ -66,13 +66,13 @@ const Dressing = () => {
             </div>
           </div>
         </div>
-        <p className="text-center text-sm font-medium text-[#484848] uppercase md:mt-20">
+        <p className="text-center text-sm font-medium text-[#484848] uppercase md:mt-20 ml-8 md:ml-0">
           Previous Works
         </p>
-        <h3 className="text-center text-3xl md:text-4xl font-semibold mt-2 text-[#040C07]">
+        <h3 className="text-center text-3xl md:text-4xl font-semibold mt-2 text-[#040C07] ml-8 md:ml-0">
           Work Gallery
         </h3>
-        <div className="w-11/12 xl:w-4/5 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 my-20 mx-auto">
+        <div className="w-11/12 xl:w-4/5 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 mb-20 mt-4 md:my-20 mx-auto">
           <img
             src="https://homebnc.com/homeimg/2017/08/21-budget-friendly-living-room-makeover-ideas-before-after-homebnc.jpg"
             alt=""
