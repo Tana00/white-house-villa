@@ -30,7 +30,7 @@ const Footer = () => {
             <BiLogoLinkedin className="w-10 h-10 bg-primary-green text-white p-2 rounded-full hover:text-green-400 hover:transition duration-300 ease-in-out" /> */}
           </div>
         </div>
-        <div className="flex flex-row justify-between gap-12 md:gap-32 mt-8 md:mt-0 ">
+        <div className="flex sm:flex-row flex-col justify-between gap-12 md:gap-32 mt-8 md:mt-0">
           {/* <div className="flex flex-col ">
             <h4 className="text-[1.125rem] font-medium">Quick Links</h4>
 

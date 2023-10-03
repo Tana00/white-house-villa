@@ -49,8 +49,8 @@ const Shortlet = () => {
         </div>
       </div>
 
-      <div className="my-10 md:my-20 w-full sm:w-10/12 md:w-4/5 lg:w-3/4 mx-auto flex flex-col lg:flex-row items-center justify-between">
-        <div className="text-left w-4/5 lg:w-full mx-auto pr-10">
+      <div className="my-10 md:my-20 w-full sm:w-10/12 md:w-4/5 mx-auto flex flex-col lg:flex-row items-center justify-between">
+        <div className="text-left w-4/5 lg:w-full mx-auto md:pr-10">
           <p className="text-left text-sm font-semibold text-primary-green uppercase">
             Browse | Book | Go
           </p>
@@ -79,7 +79,7 @@ const Shortlet = () => {
         </div>
       </div>
 
-      <div className="my-10 md:mt-40 w-full sm:w-10/12 md:w-4/5 lg:w-3/4 mx-auto flex flex-col lg:flex-row items-center justify-between">
+      <div className="my-10 md:mt-40 w-full sm:w-10/12 md:w-4/5 mx-auto flex flex-col lg:flex-row items-center justify-between">
         <div className="h-[300px] lg:h-[500px] w-full">
           <img
             src="https://a0.muscache.com/im/pictures/miso/Hosting-977242512291600380/original/bcc58799-a889-4e31-9239-a4e9167ac017.jpeg"
@@ -87,7 +87,7 @@ const Shortlet = () => {
             className="rounded h-full w-full object-cover"
           />
         </div>
-        <div className="text-left w-4/5 lg:w-full mx-auto pl-10 my-8 md:mt-0">
+        <div className="text-left w-4/5 lg:w-full mx-auto md:pl-10 my-8 md:mt-0">
           <p className="text-left text-sm font-semibold text-primary-green uppercase">
             Why Us
           </p>

@@ -134,7 +134,7 @@ const Nav = () => {
 
   return (
     <nav
-      className={`flex justify-between items-center py-4 px-6 md:px-24 bg-white fixed w-full z-50 ${
+      className={`flex justify-between items-center py-4 px-6 xl:px-24 bg-white fixed w-full z-50 ${
         scrolled ? "shadow-md" : "shadow-none"
       }`}
     >
@@ -512,7 +512,7 @@ const Nav = () => {
             </a>
           </li>
           <Link href="/attractions">
-            <li>
+            <li className="block border-b border-gray-200 pb-2">
               <p
                 onClick={() => scrollToSection("how-it-works")}
                 className={`${
@@ -529,11 +529,7 @@ const Nav = () => {
             <a
               href="/#contact"
               onClick={() => scrollToSection("contact")}
-              className={`${
-                activeSection === "contact"
-                  ? "text-primary-green"
-                  : "text-white bg-primary-green py-2 rounded-md hover:bg-transparent hover:text-primary-green hover:border hover:border-primary-green hover:transition duration-300 ease-in-out"
-              } px-4`}
+              className="text-white px-4 bg-primary-green py-2 rounded-md hover:bg-transparent hover:text-primary-green hover:border hover:border-primary-green hover:transition duration-300 ease-in-out"
             >
               Contact Us
             </a>

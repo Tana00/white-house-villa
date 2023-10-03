@@ -60,7 +60,7 @@ const FAQ = () => {
               <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]">
                 Any Questions? Look Here
               </h2>
-              <p className="text-base text-body-color">
+              <p className="text-base text-body-color px-4 md:px-0">
                 There are many variations of passages of Lorem Ipsum available
                 but the majority have suffered alteration in some form.
               </p>
@@ -68,8 +68,8 @@ const FAQ = () => {
           </div>
         </div>
 
-        <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 lg:w-1/2">
+        <div className="w-full flex flex-wrap md:w-4/5 mx-auto">
+          <div className="w-full px-4 lg:w-1/2 mx-auto">
             <FAQItem
               header="How long can I stay?"
               text="Our property is available for both short-term and long-term stays. We welcome guests for a maximum stay of [insert number] nights. If you have any specific requests or need accommodations for a longer period, feel free to reach out, and we can discuss the details."
@@ -83,7 +83,7 @@ const FAQ = () => {
               text="Our property is available for both short-term and long-term stays. We welcome guests for a maximum stay of [insert number] nights. If you have any specific requests or need accommodations for a longer period, feel free to reach out, and we can discuss the details."
             />
           </div>
-          <div className="w-full px-4 lg:w-1/2">
+          <div className="w-full px-4 lg:w-1/2 mx-auto">
             <FAQItem
               header="How long can I stay?"
               text="Our property is available for both short-term and long-term stays. We welcome guests for a maximum stay of [insert number] nights. If you have any specific requests or need accommodations for a longer period, feel free to reach out, and we can discuss the details."
