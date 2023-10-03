@@ -163,7 +163,7 @@ const Explore = () => {
                 {" "}
                 <BsFillEyeFill className="w-6 h-6" />
               </span>
-              2k
+              0
             </p>
           </div>
           {/* <div className="flex items-center gap-1 mt-4">
