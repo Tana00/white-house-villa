@@ -158,13 +158,13 @@ const Explore = () => {
             <p className="text-[#484848] text-[1.125rem]">
               Mapperley, United Kingdom
             </p>
-            <p className="flex items-center gap-1 text-lg">
+            {/* <p className="flex items-center gap-1 text-lg">
               <span className="text-primary-green">
                 {" "}
                 <BsFillEyeFill className="w-6 h-6" />
               </span>
               0
-            </p>
+            </p> */}
           </div>
           {/* <div className="flex items-center gap-1 mt-4">
             <BsFillStarFill className="w-4 h-4 text-yellow-500" />
