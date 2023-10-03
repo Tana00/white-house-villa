@@ -50,7 +50,7 @@ const Shortlet = () => {
       </div>
 
       <div className="my-10 md:my-20 w-full sm:w-10/12 md:w-4/5 mx-auto flex flex-col lg:flex-row items-center justify-between">
-        <div className="text-left w-4/5 lg:w-full mx-auto md:pr-10">
+        <div className="text-left w-4/5 sm:w-full mx-auto md:pr-10">
           <p className="text-left text-sm font-semibold text-primary-green uppercase">
             Browse | Book | Go
           </p>
@@ -87,7 +87,7 @@ const Shortlet = () => {
             className="rounded h-full w-full object-cover"
           />
         </div>
-        <div className="text-left w-4/5 lg:w-full mx-auto md:pl-10 my-8 md:mt-0">
+        <div className="text-left w-4/5 sm:w-full mx-auto md:pl-10 my-8 md:mt-0">
           <p className="text-left text-sm font-semibold text-primary-green uppercase">
             Why Us
           </p>
