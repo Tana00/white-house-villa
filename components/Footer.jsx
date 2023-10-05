@@ -13,8 +13,8 @@ const Footer = () => {
 
   return (
     <div className="w-full md:h-[55vh] p-4 md:pt-10 flex flex-col justify-between items-center bg-[#f7f7f7]">
-      <div className="flex flex-col md:flex-row w-full md:w-4/5 p-4 h-11/12 justify-between">
-        <div className="flex flex-col justify-between gap-8">
+      <div className="flex flex-col md:flex-row w-full md:w-4/5 p-4 h-11/12 justify-between gap-8 md:gap-0">
+        <div className="flex flex-col justify-between md:gap-8">
           <div className="flex gap-4 flex-col text-black">
             <Image
               className="relative w-[78px] h-[61px]"

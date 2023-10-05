@@ -10,7 +10,7 @@ const HowItWorks = () => {
   return (
     <div className="w-full h-full lg:h-screen flex flex-col justify-center items-center lg:pt-[120px] pt-0 bg-white">
       <div className="lg:w-11/12 lg:h-[90vh] mx-auto md:p-8 p-4 flex flex-col lg:flex-row justify-center items-start bg-[#F3FBF7] rounded-md">
-        <div className="flex flex-1 flex-col gap-3 mt-0 md:mt-20">
+        <div className="flex flex-1 flex-col gap-3 mt-0 md:mt-10">
           <div className="md:mx-8 md:px-8">
             <h1 className="text-[2.5rem] leading-[64px] font-bold text-[#226E46]">
               How it works

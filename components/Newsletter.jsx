@@ -6,13 +6,16 @@ import image1 from "../public/assets/gallery/dining.webp";
 const Newsletter = () => {
   const [email, setEmail] = useState("");
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     const subject = "Subscribe to NewsLetter";
-    const body = `Name: ${formData.name}`;
+    const body = `Email: ${email}`;
 
-    return `mailto:whitehousevilla23@gmail.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:whitehousevilla23@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
+    setEmail("");
+    return (window.location.href = mailtoLink);
   };
   return (
     <div className="w-full h-1/2 flex flex-col justify-center items-center bg-white mb-11">
@@ -29,7 +32,7 @@ const Newsletter = () => {
             className="flex mt-4 bg-white rounded-md px-4 md:mr-24 py-2.5"
           >
             <input
-              type="text"
+              type="email"
               className="w-full h-12 bg-white rounded-l-md px-4 placeholder:text-gray-400 placeholder:text-sm outline-none"
               placeholder="Enter your email address"
               value={email}
@@ -38,6 +41,7 @@ const Newsletter = () => {
             <button
               type="submit"
               className="w-[200px] h-12 rounded-md bg-primary-green rounded-r-md text-white"
+              // onClick={handleSubmit}
             >
               Subscribe
             </button>

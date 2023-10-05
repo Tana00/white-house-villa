@@ -16,13 +16,21 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     const subject = "Contact Us";
     const body = `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0D%0AMessage: ${formData.message}`;
 
-    return `mailto:whitehousevilla23@gmail.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:whitehousevilla23@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
+
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+    return (window.location.href = mailtoLink);
   };
 
   return (
