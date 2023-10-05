@@ -20,6 +20,7 @@ const Footer = () => {
               className="relative w-[78px] h-[61px]"
               alt="White house chosen"
               src={logo}
+              placeholder="blur"
             />
             <p className="">Your Home Away From Home</p>
           </div>

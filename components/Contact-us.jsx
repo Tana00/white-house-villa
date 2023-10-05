@@ -113,6 +113,7 @@ const ContactUs = () => {
             src={image1}
             alt="pic1"
             className="w-full h-full max-h-[550px] object-cover"
+            placeholder="blur"
           />
         </div>
       </div>

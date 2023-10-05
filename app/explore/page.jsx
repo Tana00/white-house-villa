@@ -117,6 +117,7 @@ const Explore = () => {
               src={pic6}
               alt="pic1"
               className="w-full h-full object-cover rounded-2xl"
+              placeholder="blur"
             />
           </div>
           <div className="w-full xl:h-full rounded-2xl h-[240px]">
@@ -124,6 +125,7 @@ const Explore = () => {
               src={pic2}
               alt="pic1"
               className="w-full h-full object-cover rounded-2xl"
+              placeholder="blur"
             />
           </div>
           <div className="w-full xl:h-full rounded-2xl h-[240px]">
@@ -131,6 +133,7 @@ const Explore = () => {
               src={pic3}
               alt="pic1"
               className="w-full h-full object-cover rounded-2xl"
+              placeholder="blur"
             />
           </div>
           <div className="w-full xl:h-full rounded-2xl h-[240px]">
@@ -138,6 +141,7 @@ const Explore = () => {
               src={pic4}
               alt="pic1"
               className="w-full h-full object-cover rounded-2xl"
+              placeholder="blur"
             />
           </div>
         </div>
@@ -146,6 +150,7 @@ const Explore = () => {
             src={pic5}
             alt="pic1"
             className="w-full rounded-2xl h-full object-cover"
+            placeholder="blur"
           />
         </div>
       </div>

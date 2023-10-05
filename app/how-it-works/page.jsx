@@ -61,6 +61,7 @@ const HowItWorks = () => {
             src={image1}
             alt="pic1"
             className="w-full h-full rounded-2xl object-contain object-center"
+            placeholder="blur"
           />
         </div>
       </div>

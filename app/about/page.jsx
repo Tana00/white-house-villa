@@ -19,7 +19,13 @@ const About = () => {
         </p>
       </div>
       <div className=" flex flex-1 flex-col gap-8 md:w-4/5 justify-center items-center text-center bg-white rounded-md p-8">
-        <Image src={guest} alt="guest" width={90} height={90} />
+        <Image
+          src={guest}
+          alt="guest"
+          width={90}
+          height={90}
+          placeholder="blur"
+        />
         <h4 className="text-[1.5rem] font-semibold text-black">For Guests</h4>
         <p className="home-text text-[1.125rem] mt-[-30px] text-[#484848]">
           Discover the perfect retreat for any occasion, whether it's a romantic

@@ -139,7 +139,13 @@ const Nav = () => {
       }`}
     >
       <div className="flex items-center">
-        <Image src={logo} alt="logo" width={70} height={40} />
+        <Image
+          src={logo}
+          alt="logo"
+          width={70}
+          height={40}
+          placeholder="blur"
+        />
       </div>
       <div className="lg:ml-12">
         <ul className="hidden lg:flex items-center gap-4">
@@ -205,6 +211,7 @@ const Nav = () => {
                             alt={menu?.label}
                             width={20}
                             height={20}
+                            placeholder="blur"
                           />
                           <span className="text-inherit flex-1 pl-4">
                             {menu?.label}
@@ -270,6 +277,7 @@ const Nav = () => {
                           alt={menu?.label}
                           width={20}
                           height={20}
+                          placeholder="blur"
                         />
                         <span className="text-inherit flex-1 pl-4">
                           {menu?.label}
@@ -411,6 +419,7 @@ const Nav = () => {
                             alt={menu?.label}
                             width={20}
                             height={20}
+                            placeholder="blur"
                           />
                           <span className="text-inherit flex-1 pl-4">
                             {menu?.label}
@@ -476,6 +485,7 @@ const Nav = () => {
                           alt={menu?.label}
                           width={20}
                           height={20}
+                          placeholder="blur"
                         />
                         <span className="text-inherit flex-1 pl-4">
                           {menu?.label}

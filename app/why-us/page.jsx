@@ -19,17 +19,28 @@ const WhyUs = () => {
                 src={image1}
                 alt="pic1"
                 className="w-full h-full rounded-2xl"
+                placeholder="blur"
               />
               {/*  two neomorphic cards  on the top left and bottom right using absolute positioning */}
               <div className="flex gap-4 absolute left-[-50px] w-[200px] h-[50px] top-14 bg-[#F3FBF7] backdrop-blur-sm rounded-md shadow-sm justify-center items-center">
                 <div className="bg-[#FFF0F0] bg-opacity-60 w-[35px] h-[35px] rounded-full flex items-center justify-center">
-                  <Image src={pin} alt="pic1" className="w-4 h-4" />
+                  <Image
+                    src={pin}
+                    alt="pic1"
+                    className="w-4 h-4"
+                    placeholder="blur"
+                  />
                 </div>
                 <p className="text-black text-[0.875rem]">Apartment booked</p>
               </div>
               <div className="absolute right-[-30px] md:right-[-50px] w-[200px] h-[50px] bottom-14 bg-[#F3FBF7] bg-opacity-50 backdrop-blur-sm rounded-md shadow-sm flex gap-4 justify-center items-center">
                 <div className="bg-gray-200 bg-opacity-60 w-[35px] h-[35px] rounded-full flex items-center justify-center">
-                  <Image src={money} alt="pic1" className="w-4 h-4" />
+                  <Image
+                    src={money}
+                    alt="pic1"
+                    className="w-4 h-4"
+                    placeholder="blur"
+                  />
                 </div>
                 <p className="text-black text-[0.875rem]">Payment Successful</p>
               </div>
@@ -42,7 +53,12 @@ const WhyUs = () => {
             <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 w-full mx-auto">
               <div className=" md:w-[260px] md:h-[250px] rounded-md z-10 bg-white bg-opacity-50 border border-white flex flex-col gap-3 px-2.5 py-8">
                 <div className="h-16">
-                  <Image src={location} alt="pic1" className="md:w-16 h-full" />
+                  <Image
+                    src={location}
+                    alt="pic1"
+                    className="md:w-16 h-full"
+                    placeholder="blur"
+                  />
                 </div>
                 <p className="text-black text-lg font-semibold py-2">
                   Prime Locations
@@ -54,7 +70,12 @@ const WhyUs = () => {
               </div>
               <div className=" md:w-[260px] md:h-[250px] rounded-md z-10 bg-white bg-opacity-50 border border-white flex flex-col gap-3 px-2.5 py-8">
                 <div className="h-16">
-                  <Image src={cleaning} alt="pic1" className="md:w-16 h-full" />
+                  <Image
+                    src={cleaning}
+                    alt="pic1"
+                    className="md:w-16 h-full"
+                    placeholder="blur"
+                  />
                 </div>
                 <p className="text-black text-lg font-semibold py-2">
                   Responsive Maintenance
@@ -65,7 +86,12 @@ const WhyUs = () => {
               </div>
               <div className=" md:w-[260px] md:h-[250px] rounded-md z-10 bg-white bg-opacity-50 border border-white flex flex-col gap-3 px-2.5 py-8">
                 <div className="h-16">
-                  <Image src={security} alt="pic1" className="md:w-16 h-full" />
+                  <Image
+                    src={security}
+                    alt="pic1"
+                    className="md:w-16 h-full"
+                    placeholder="blur"
+                  />
                 </div>
                 <p className="text-black text-lg font-semibold py-2">
                   Safety and Security
@@ -76,7 +102,12 @@ const WhyUs = () => {
               </div>
               <div className=" md:w-[260px] md:h-[250px] rounded-md z-10 bg-white bg-opacity-50 border border-white flex flex-col gap-3 px-2.5 py-8">
                 <div className="h-16">
-                  <Image src={deal} alt="pic1" className="md:w-16 h-full" />
+                  <Image
+                    src={deal}
+                    alt="pic1"
+                    className="md:w-16 h-full"
+                    placeholder="blur"
+                  />
                 </div>
                 <p className="text-black text-lg font-semibold py-2">
                   Flexible Booking Terms
