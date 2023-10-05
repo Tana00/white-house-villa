@@ -1,8 +1,19 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import image1 from "../public/assets/gallery/dining.webp";
 
 const Newsletter = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = () => {
+    const subject = "Subscribe to NewsLetter";
+    const body = `Name: ${formData.name}`;
+
+    return `mailto:whitehousevilla23@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+  };
   return (
     <div className="w-full h-1/2 flex flex-col justify-center items-center bg-white mb-11">
       <div className="w-full flex lg:flex-row flex-col">
@@ -13,16 +24,24 @@ const Newsletter = () => {
           <p className="text-[#F7F7F7] text-[1.125rem] my-4">
             Get updates on our latest listings
           </p>
-          <div className="flex mt-4 bg-white rounded-md px-4 md:mr-24 py-2.5">
+          <form
+            onSubmit={handleSubmit}
+            className="flex mt-4 bg-white rounded-md px-4 md:mr-24 py-2.5"
+          >
             <input
               type="text"
               className="w-full h-12 bg-white rounded-l-md px-4 placeholder:text-gray-400 placeholder:text-sm outline-none"
               placeholder="Enter your email address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
-            <button className="w-[200px] h-12 rounded-md bg-primary-green rounded-r-md text-white">
+            <button
+              type="submit"
+              className="w-[200px] h-12 rounded-md bg-primary-green rounded-r-md text-white"
+            >
               Subscribe
             </button>
-          </div>
+          </form>
         </div>
         <div className="flex-1 hidden lg:block max-h-[386px]">
           <Image

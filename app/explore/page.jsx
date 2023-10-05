@@ -112,28 +112,28 @@ const Explore = () => {
       <div className="flex md:flex-row flex-col gap-4 flex-1 px-4 md:px-10 md:w-11/12 w-full mt-12 ">
         <div className="grid md:grid-cols-2 md:gap-4 gap-2 w-full">
           {/*  4 small cards with the images as the background */}
-          <div className="w-full rounded-2xl h-[240px]">
+          <div className="w-full xl:h-full rounded-2xl h-[240px]">
             <Image
               src={pic6}
               alt="pic1"
               className="w-full h-full object-cover rounded-2xl"
             />
           </div>
-          <div className="w-full rounded-2xl h-[240px]">
+          <div className="w-full xl:h-full rounded-2xl h-[240px]">
             <Image
               src={pic2}
               alt="pic1"
               className="w-full h-full object-cover rounded-2xl"
             />
           </div>
-          <div className="w-full rounded-2xl h-[240px]">
+          <div className="w-full xl:h-full rounded-2xl h-[240px]">
             <Image
               src={pic3}
               alt="pic1"
               className="w-full h-full object-cover rounded-2xl"
             />
           </div>
-          <div className="w-full rounded-2xl h-[240px]">
+          <div className="w-full xl:h-full rounded-2xl h-[240px]">
             <Image
               src={pic4}
               alt="pic1"
@@ -141,7 +141,7 @@ const Explore = () => {
             />
           </div>
         </div>
-        <div className="w-full rounded-2xl h-[500px]">
+        <div className="w-full rounded-2xl h-[500px] xl:h-full">
           <Image
             src={pic5}
             alt="pic1"
@@ -268,8 +268,10 @@ const Explore = () => {
                   </ul>
                 </div>
               </div> */}
-              <p className="text-[#040C07] text-lg mt-8">Book on</p>
-              <div className="flex w-full gap-4">
+              <p className="text-[#040C07] text-lg mt-8 mb-2 w-full text-center">
+                Book on
+              </p>
+              <div className="sm:flex w-full gap-4">
                 <a
                   href="https://www.airbnb.co.uk/rooms/977242512291600380?guests=1&adults=1&s=13&unique_share_id=04e5a211-83e6-4458-9847-b763cd49a3e9"
                   target="_blank"

@@ -1,6 +1,30 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = () => {
+    const subject = "Contact Us";
+    const body = `Name: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0D%0AMessage: ${formData.message}`;
+
+    return `mailto:whitehousevilla23@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+  };
+
   return (
     <div
       id="contact"
@@ -16,39 +40,66 @@ const Contact = () => {
           </p>
         </div>
         <div className="flex flex-col md:w-3/4 lg:w-1/2 xl:w-2/5 w-full mt-5">
-          <form className="flex flex-col gap-6">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-6">
             <div className="flex flex-col gap-3">
-              <label className="text-[#252B42] text-base font-medium">
+              <label
+                htmlFor="name"
+                className="text-[#252B42] text-base font-medium"
+              >
                 Name
               </label>
               <input
                 type="text"
                 className="w-full h-12 outline-none bg-white rounded-md p-4 placeholder:text-gray-400 placeholder:text-xs"
                 placeholder="Enter your full name"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
               />
             </div>
             <div className="flex flex-col gap-3">
-              <label className="text-[#252B42] text-base font-medium">
+              <label
+                htmlFor="email"
+                className="text-[#252B42] text-base font-medium"
+              >
                 Email Address
               </label>
               <input
                 type="text"
                 className="w-full h-12 outline-none bg-white rounded-md p-4 placeholder:text-gray-400 placeholder:text-xs"
                 placeholder="Enter your email address"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
               />
             </div>
             <div className="flex flex-col gap-3">
-              <label className="text-[#252B42] text-base font-medium">
+              <label
+                htmlFor="message"
+                className="text-[#252B42] text-base font-medium"
+              >
                 Send us a message
               </label>
               <textarea
+                id="message"
                 type="text"
                 className="w-full h-32 resize-none bg-white outline-none rounded-md p-4 placeholder:text-gray-400 placeholder:text-xs"
                 placeholder="Message. . ."
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                required
               />
             </div>
             <div className="flex justify-center">
-              <button className="w-[200px] h-12 bg-primary-green text-white rounded-md">
+              <button
+                type="submit"
+                className="w-[200px] h-12 bg-primary-green text-white rounded-md"
+              >
                 Send Message
               </button>
             </div>

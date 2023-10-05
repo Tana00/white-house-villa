@@ -10,7 +10,7 @@ import location from "../../public/assets/location.png";
 
 const WhyUs = () => {
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center bg-white pt-[120px] lg:pt-0">
+    <div className="w-full h-full flex flex-col justify-center items-center bg-white pt-10 lg:py-[120px]">
       <div className="md:w-4/5 mx-auto h-full flex flex-col justify-center items-center bg-white">
         <div className="flex lg:flex-row flex-col gap-4 w-full mx-auto h-4/5 items-center justify-center">
           <div className="w-full lg:w-4/5 h-full flex flex-1 justify-center">

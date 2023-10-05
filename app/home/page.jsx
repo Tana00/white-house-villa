@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="home-bg flex flex-col lg:flex-row gap-6 h-auto md:h-screen justify-center md:mt-20 mt-20">
       <div className="flex flex-1 w-full lg:w-1/2 px-4 md:px-20 flex-col gap-6 items-start justify-center h-full text-black mt-20 md:mt-0">
-        <h1 className="text-[4rem] md:text-[5rem] font-semibold leading-none text-black mt-40">
+        <h1 className="text-[3rem] font-bold leading-[3.5rem] mt-20 md:mt-0 md:text-[5rem] md:font-semibold md:leading-[4.5rem] text-black">
           Your <span className="text-primary-green">Home</span> Away from{" "}
           <span className="text-primary-green">Home.</span>
         </h1>

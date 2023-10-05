@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Pony from "../../public/assets/gallery/pony.jpeg";
 import Pony1 from "../../public/assets/gallery/pony2.jpeg";
@@ -40,42 +40,42 @@ const attractionList = [
     id: 1,
     images: [Pony, Pony1, Pony2],
     title: "Pony trekking",
-    type: "Nature & Wild life",
+    type: "Animal lovers will enjoy this pony trekking adventure at Creswell Crags, near Worksop, Nottinghamshire. Admire the beautiful limestone gorge as you meander along trails through farmland and forests.",
     rating: "5.0",
   },
   {
     id: 2,
     images: [Wollaton, Wollaton1, Wollaton2],
     title: "Wollaton Hall & Park",
-    type: "Nature & Wild life",
+    type: "Wollaton Hall is one of the country's finest Grade One listed Elizabethan mansions, set within 500 acres of beautiful parkland. Experience stunning architecture, exhibitions, a packed events program and an array of wildlife.",
     rating: "4.5",
   },
   {
     id: 3,
     images: [Caves, Caves1, Caves2],
     title: "City Of Caves",
-    type: "Historic Sites",
+    type: "Nottingham has the UK's largest network of caves - over 800 are hidden beneath its streets. At The City of Caves, you can discover the largest publicly available section of this vast underground network.",
     rating: "4.0",
   },
   {
     id: 4,
     images: [Theatre, Theatre1, Theatre2],
     title: "Theatre Royal & Royal Concert Hall",
-    type: "Beach",
+    type: "BeThe Theatre Royal & Royal Concert Hall are 2 first class entertainment venues in Nottingham. Come and see top West End musicals and plays, opera and ballet, pop, rock and classical music, children's shows and side-splitting comedy.",
     rating: "4.0",
   },
   {
     id: 5,
     images: [Motor, Motor1, Motor2],
     title: "Motor Point Arena",
-    type: "Entertainment",
+    type: "The Motorpoint Arena Nottingham is one of the UK's top entertainment venues. Our 10,000 seat Arena hosts the cream of live music, comedy, shows & sporting events in the Midlands.",
     rating: "4.0",
   },
   {
     id: 6,
     images: [Robinhood, Robinhood1, Robinhood2],
     title: "The Robin Hood Experience",
-    type: "Museum",
+    type: "Visit the only attraction in the City of Nottingham Dedicated solely to our World Famous Outlaw Hero! Travel back in time through our immersive walk-through in the shadow of Nottingham Castle and experience the sights, sounds and smells of Medieval Nottingham! ",
     rating: "4.0",
   },
   {
@@ -94,39 +94,74 @@ const attractionList = [
   },
   {
     id: 9,
+    images: [Experience, Experience1, Experience2],
+    title: "Private Immersive Play Wall Experience",
+    type: "Fun, frenetic and fantastically immersive games for the whole family. Where your body becomes the controller and your mind believes it is all real! Our Immersive Play Zone will have you in stitches and the kids in their element. ",
+    rating: "5.0",
+  },
+  {
+    id: 10,
+    images: [Workshop, Workshop1, Workshop2],
+    title: "Games Workshop Warhammer World",
+    type: "Warhammer World is the home of the Warhammer hobby, Games Workshop's global headquarters and visitor centre, a haven for collectors and gamers from across the globe! ",
+    rating: "4.5",
+  },
+  {
+    id: 11,
     images: [PlayHouse, PlayHouse1, PlayHouse2],
     title: "Nottingham Play House",
     type: "Theatre",
     rating: "4.5",
   },
-  {
-    id: 10,
-    images: [Experience, Experience1, Experience2],
-    title: "Private Immersive Play Wall Experience",
-    type: "Games",
-    rating: "5.0",
-  },
-  {
-    id: 11,
-    images: [Workshop, Workshop1, Workshop2],
-    title: "Games Workshop Warhammer World",
-    type: "Games",
-    rating: "4.5",
-  },
 ];
 
 const Attractions = () => {
+  const image = useRef();
+
+  const [loadingStates, setLoadingStates] = useState(
+    Array(attractionList.length).fill(false)
+  );
   const [activeIndexes, setActiveIndexes] = useState(
     Array(attractionList.length).fill(0)
   );
 
+  // const imageLoader = ({ src, width, quality }) => {
+  //   return `http://localhost:3000/${src}?w=${width}&q=${quality || 75}`;
+  //   // http://localhost:3000/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpony2.de3db89a.jpeg&w=2048&q=75
+  // };
+
   const handleDotClick = (index, siteIndex) => {
+    setLoadingStates((prevStates) => {
+      const updatedStates = [...prevStates];
+      updatedStates[siteIndex] = true;
+      return updatedStates;
+    });
     setActiveIndexes((prevIndexes) => {
       const updatedIndexes = [...prevIndexes];
       updatedIndexes[siteIndex] = index;
       return updatedIndexes;
     });
   };
+
+  const handleImageLoad = (siteIndex) => {
+    console.log("hitting here");
+    setLoadingStates((prevStates) => {
+      const updatedStates = [...prevStates];
+      updatedStates[siteIndex] = false;
+      return updatedStates;
+    });
+  };
+
+  useEffect(() => {
+    if (image.current?.complete) {
+      setLoadingStates((prevStates) => {
+        const updatedStates = [...prevStates];
+        updatedStates[siteIndex] = false;
+        handleImageLoad(siteIndex);
+        return updatedStates;
+      });
+    }
+  }, []);
 
   return (
     <section>
@@ -144,25 +179,35 @@ const Attractions = () => {
           </p>
         </div>
       </div>
-      <div className="w-11/12 xl:w-4/5 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 my-20 mx-auto">
+      <div className="w-11/12 xl:w-4/5 2xl:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 my-20 mx-auto">
         {attractionList?.map((site, siteIndex) => (
           <div className={`w-full`}>
-            <div
-              className={`w-full mx:auto`}
-              //   ${
-              //     site?.id % 2 === 0 ? "mx-auto md:mr-auto" : "mx-auto md:ml-auto"
-              //   }`}
-            >
+            <div className={`w-full mx:auto`}>
               <div>
                 <div className="rounded-2xl w-full">
+                  {/* {!loadingStates[siteIndex] ? ( */}
                   <Image
                     src={site?.images[activeIndexes[siteIndex]]}
                     alt={site?.title}
                     width="0"
                     height="370"
                     sizes="100vw"
-                    className="w-[557px] h-[370px] rounded-2xl object-cover object-center"
+                    className="w-[557px] h-[370px] xl:w-full rounded-2xl object-cover object-center"
+                    // loader={imageLoader}
+                    // onLoadingComplete={(e) => {
+                    //   // e.srcset.indexOf("data:image/gif;base64") < 0 &&
+                    //   handleImageLoad(siteIndex);
+                    //   console.log(
+                    //     "hitting here first",
+                    //     site?.images[activeIndexes[siteIndex]]
+                    //   );
+                    // }}
+                    placeholder="blur"
+                    blurDataURL="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                   />
+                  {/* ) : (
+                    <div className="relative overflow-hidden h-[370px] w-full rounded-2xl bg-[#f1f2f3] bg-gradient-to-r from-transparent via-gray-300 to-transparent before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_1s_infinite] before:border-t before:border-gray-300 before:bg-gradient-to-r before:from-transparent before:via-gray-300 before:to-transparent"></div>
+                  )} */}
                   <div className="flex items-center justify-center mt-3">
                     {site?.images?.map((_, i) => (
                       <div
@@ -198,7 +243,7 @@ const Attractions = () => {
                     ))}
                   </div>
                 </div>
-                <div className="flex items-center justify-between w-full mt-6">
+                <div className="flex items-start justify-between w-full mt-6">
                   <div>
                     <p className="text-2xl font-semibold leading-10 text-[#040C07]">
                       {site?.title}
@@ -207,7 +252,7 @@ const Attractions = () => {
                       {site?.type}
                     </p>
                   </div>
-                  <di className="flex items-center">
+                  <di className="flex items-center mt-2">
                     <svg
                       width="21"
                       height="20"
