@@ -33,7 +33,7 @@ const WhyUs = () => {
                 </div>
                 <p className="text-black text-[0.875rem]">Apartment booked</p>
               </div>
-              <div className="absolute right-[-30px] md:right-[-50px] w-[200px] h-[50px] bottom-14 bg-[#F3FBF7] bg-opacity-50 backdrop-blur-sm rounded-md shadow-sm flex gap-4 justify-center items-center">
+              <div className="absolute right-[0px] md:right-[-50px] w-[200px] h-[50px] bottom-14 bg-[#F3FBF7] bg-opacity-50 backdrop-blur-sm rounded-md shadow-sm flex gap-4 justify-center items-center">
                 <div className="bg-gray-200 bg-opacity-60 w-[35px] h-[35px] rounded-full flex items-center justify-center">
                   <Image
                     src={money}
@@ -50,7 +50,7 @@ const WhyUs = () => {
             <div className="w-full lg:ml-32 text-center lg:text-left mt-10 lg:mt-0">
               <h4 className="text-[2.5rem] font-semibold">Why Choose Us</h4>
             </div>
-            <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4 w-full mx-auto">
+            <div className=" relative grid items-center justify-center grid-cols-1 md:grid-cols-2  sm:grid-cols-2 gap-4 md:gap-12 mt-4 md:w-auto w-full mx-auto">
               <div className=" md:w-[260px] md:h-[250px] rounded-md z-10 bg-white bg-opacity-50 border border-white flex flex-col gap-3 px-2.5 py-8">
                 <div className="h-16">
                   <Image
@@ -118,7 +118,7 @@ const WhyUs = () => {
               </div>
 
               {/*  a circle behind the cards using absolute positioning */}
-              <div className="absolute w-[335px] h-[335px] bg-gradient-to-tr from-primary-green to-[#226e46] bg-opacity-10 blur-[205px] rounded-full -z-0 flex justify-center items-center top-24 left-20"></div>
+              <div className="absolute w-[350px] h-[350px] md:w-[335px] md:h-[335px] bg-gradient-to-tr from-primary-green to-[#226e46] bg-opacity-10 blur-[305px]  md:blur-[205px] rounded-full -z-0 flex justify-center items-center top-72 md:top-24 md:left-20"></div>
             </div>
           </div>
         </div>

@@ -21,8 +21,8 @@ const HowItWorks = () => {
               Here's how it all works:
             </p>
           </div>
-          <div className="grid grid-cols-2 mt-4 md:mx-12 mx-4 font-medium">
-            <div className="flex flex-col items-center justify-center mb-6">
+          <div className="grid grid-cols-2 gap-4 mt-4 md:mx-12 mx-4 font-medium">
+            <div className="flex flex-col items-center justify-center mb-6 ">
               <div className="bg-white rounded-full w-[80px] h-[80px] flex justify-center items-center">
                 <IoNavigateCircleOutline className="w-12 h-12 text-primary-green" />
               </div>
@@ -30,7 +30,7 @@ const HowItWorks = () => {
                 1. Explore Our Products
               </p>
             </div>
-            <div className="flex flex-col items-center justify-center mb-6">
+            <div className="flex flex-col items-center justify-center mb-6 ">
               <div className="bg-white rounded-full w-[80px] h-[80px] flex justify-center items-center">
                 <LuBookUp className="w-12 h-12 text-primary-green" />
               </div>
@@ -38,7 +38,7 @@ const HowItWorks = () => {
                 2. Book on either Airbnb or Booking.com
               </p>
             </div>
-            <div className="flex flex-col items-center justify-center mb-6">
+            <div className="flex flex-col items-center justify-center mb-6 ">
               <div className="bg-white rounded-full w-[80px] h-[80px] flex justify-center items-center">
                 <RiSecurePaymentLine className="w-12 h-12 text-primary-green" />
               </div>
@@ -46,7 +46,7 @@ const HowItWorks = () => {
                 3. Review and make payments
               </p>
             </div>
-            <div className="flex flex-col items-center justify-center mb-6">
+            <div className="flex flex-col items-center justify-center mb-6 ">
               <div className="bg-white rounded-full w-[80px] h-[80px] flex justify-center items-center">
                 <AiOutlineHome className="w-12 h-12 text-primary-green" />
               </div>
