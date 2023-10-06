@@ -156,7 +156,7 @@ const Explore = () => {
       </div>
       <div className="flex flex-col w-11/12 mt-8 px-4 md:px-10">
         <div className="">
-          <h4 className="text-[2.5rem] font-semibold">
+          <h4 className="text-[2rem] md:text-[2.5rem] font-semibold">
             Exquisite 3 bed House!
           </h4>
           <div className="flex justify-between items-center">

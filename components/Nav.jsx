@@ -144,7 +144,7 @@ const Nav = () => {
           alt="logo"
           width={70}
           height={40}
-          placeholder="blur"
+          // placeholder="blur"
         />
       </div>
       <div className="lg:ml-12">

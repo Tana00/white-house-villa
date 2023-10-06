@@ -167,7 +167,7 @@ const Attractions = () => {
     <section>
       <div className="bg-[#F3FBF7] w-full h-full justify-center py-20 md:py-[180px]">
         <div className="flex flex-1 w-full mx-auto text-center px-4 md:px-20 flex-col gap-6 items-center justify-center h-full text-[#040C07] mt-20 md:mt-0">
-          <h1 className="text-[4rem] font-semibold text-[#040C07]">
+          <h1 className="text-[2.5rem] md:text-[4rem] font-semibold text-[#040C07]">
             Attractions
           </h1>
           <p className="text-lg font-medium px-4 md:px-32 text-[#040C07]">
@@ -216,29 +216,14 @@ const Attractions = () => {
                         className="cursor-pointer"
                         onClick={() => handleDotClick(i, siteIndex)}
                       >
-                        <svg
-                          width="7"
-                          height="6"
-                          viewBox="0 0 7 6"
-                          xmlns="http://www.w3.org/2000/svg"
-                          className={`${
+                        {/* create a slide indicator */}
+                        <div
+                          className={`w-2.5 h-2.5 m-1 md:w-2 md:h-2 rounded-full ${
                             activeIndexes[siteIndex] === i
-                              ? "fill-[#226E46]"
-                              : "fill-[#D9D9D9]"
+                              ? "bg-primary-green"
+                              : "bg-gray-300"
                           }`}
-                        >
-                          <circle
-                            cx="3.5"
-                            cy="3"
-                            r="3"
-                            style={{
-                              fill:
-                                activeIndexes[siteIndex] === i
-                                  ? "#226E46"
-                                  : "#D9D9D9",
-                            }}
-                          />
-                        </svg>
+                        ></div>
                       </div>
                     ))}
                   </div>
