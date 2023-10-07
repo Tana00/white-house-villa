@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { GrFacebookOption, GrTwitter } from "react-icons/gr";
-import { IoLogoInstagram } from "react-icons/io";
-import { BiLogoLinkedin } from "react-icons/bi";
+// import { GrFacebookOption, GrTwitter } from "react-icons/gr";
+// import { IoLogoInstagram } from "react-icons/io";
+// import { BiLogoLinkedin } from "react-icons/bi";
 import { LuMapPin } from "react-icons/lu";
 import { BsPhone } from "react-icons/bs";
-import logo from "../public/assets/logo2.svg";
+import logo from "../public/assets/logo3.png";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="flex flex-col justify-between md:gap-8">
           <div className="flex gap-4 flex-col text-black">
             <Image
-              className="relative w-[78px] h-[61px]"
+              className="relative w-[88px] h-[71px] md:w-[88px] md:h-[71px]"
               alt="White house chosen"
               src={logo}
               // placeholder="blur"

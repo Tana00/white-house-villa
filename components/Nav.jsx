@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
-import logo from "../public/assets/logo2.svg";
+import logo from "../public/assets/logo3.png";
 import shortletIcon from "../public/assets/shortlet.svg";
 import dressingIcon from "../public/assets/dressing.svg";
 import photoshootIcon from "../public/assets/photo-shoot.svg";
@@ -144,7 +144,7 @@ const Nav = () => {
           alt="logo"
           width={70}
           height={40}
-          // placeholder="blur"
+          className="md:my-1"
         />
       </div>
       <div className="lg:ml-12">

@@ -9,7 +9,7 @@ const Shortlet = () => {
         <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/90 sm:to-white/15 sm:bg-gradient-to-r"></div>
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 pt-36 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
           <div className="max-w-xl text-center sm:text-left">
-            <h1 className="text-3xl font-extrabold sm:text-6xl md:!leading-[4rem]">
+            <h1 className="text-4xl sm:text-5xl font-extrabold md:text-6xl md:!leading-[4rem]">
               Unwind in Luxurious Airbnb Retreats.
             </h1>
 
