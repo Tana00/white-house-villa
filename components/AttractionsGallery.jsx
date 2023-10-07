@@ -51,8 +51,8 @@ const Carousel = ({ site }) => {
                       instanceRef.current?.moveToIdx(idx);
                     }}
                     className={
-                      "border-none w-3 h-3 bg-[#D9D9D9] rounded-full mx-1.5 p-1 md:p-1.5 cursor-pointer focus:outline-none" +
-                      (currentSlide === idx ? " bg-[#226E46]" : "")
+                      "border-none w-3 h-3 rounded-full mx-1.5 p-1 md:p-1.5 cursor-pointer focus:outline-none" +
+                      (currentSlide === idx ? " bg-[#226E46]" : " bg-[#D9D9D9]")
                     }
                   ></button>
                 ))}
