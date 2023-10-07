@@ -5,7 +5,9 @@ const Dressing = () => {
     <section>
       <div className="bg-[#F3FBF7] w-full justify-center py-20 md:py-[180px] font-manrope">
         <div className="flex flex-1 w-full mx-auto text-center px-4 md:px-20 flex-col gap-6 items-center justify-center h-full text-[#040C07] mt-20 md:mt-0">
-          <h1 className="text-[4rem] font-semibold text-[#040C07]">Dressing</h1>
+          <h1 className="text-4xl md:text-[4rem] font-semibold text-[#040C07]">
+            Dressing
+          </h1>
           <p className="text-lg font-medium px-4 xl:px-32 text-[#040C07] w-full lg:w-3/4">
             Welcome to a world of exploration and discovery. White House Villa
             is brimming with captivating attractions that cater to every
@@ -27,7 +29,7 @@ const Dressing = () => {
             <p className="text-sm font-medium text-[#484848] uppercase">
               What we Offer
             </p>
-            <h3 className="text-4xl font-semibold mt-2 text-[#040C07] md:w-2/3">
+            <h3 className="text-4xl md:text-4xl font-semibold mt-2 text-[#040C07] md:w-2/3">
               Want to Know More About Our Services
             </h3>
           </div>

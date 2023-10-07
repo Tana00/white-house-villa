@@ -9,7 +9,7 @@ const Studio = () => {
     <section>
       <div className="bg-[#F3FBF7] w-full justify-center py-20 md:py-[180px] font-manrope">
         <div className="flex flex-1 w-full mx-auto text-center px-4 md:px-20 flex-col gap-6 items-center justify-center h-full text-[#040C07] mt-20 md:mt-0">
-          <h1 className="text-center text-[3rem] font-semibold text-[#040C07]">
+          <h1 className="text-center text-3xl sm:text-4xl md:text-[3rem] font-semibold text-[#040C07]">
             Luxury shortlet for photo/video shoot
           </h1>
           <p className="text-center text-lg font-medium px-4 xl:px-32 text-[#040C07] w-full md:w-3/4">

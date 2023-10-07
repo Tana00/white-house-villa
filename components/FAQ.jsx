@@ -57,7 +57,7 @@ const FAQ = () => {
               <span className="mb-2 block text-lg font-semibold text-primary">
                 FAQ
               </span>
-              <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]">
+              <h2 className="mb-4 text-2xl font-bold text-dark sm:text-4xl md:text-[40px]">
                 Any Questions? Look Here
               </h2>
               <p className="text-base text-body-color px-4 md:px-0">

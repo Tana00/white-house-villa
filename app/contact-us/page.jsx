@@ -36,9 +36,9 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full h-screen flex flex-col justify-center items-center  bg-white"
+      className="w-full h-screen flex flex-col justify-center items-center bg-white"
     >
-      <div className=" w-full h-[90vh] mx-auto p-8 flex flex-col gap-8 justify-center items-center bg-[#F3FBF7] rounded-md">
+      <div className="w-full h-full mx-auto p-8 flex flex-col gap-8 justify-center items-center bg-[#F3FBF7] rounded-md">
         <div className="flex flex-col gap-3 text-center">
           <h4 className="text-3xl md:text-[2.5rem] md:leading-[64px] font-semibold text-primary-green">
             Have any questions? Contact Us

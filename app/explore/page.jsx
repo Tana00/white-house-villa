@@ -99,10 +99,10 @@ const Explore = () => {
     <div className=" flex flex-col w-full min-h-screen items-center justify-start bg-white">
       {/*  Headline text */}
       <div className="flex flex-2 lg:px-20 px-4 flex-col lg:w-4/6 gap-6 items-center justify-start text-center text-[#040C07] mt-12">
-        <h3 className="text-[2.5rem] font-semibold leading-none text-[#040C07]">
+        <h3 className="text-3xl sm:text-4xl md:text-[2.5rem] font-semibold leading-none text-[#040C07]">
           Book Now
         </h3>
-        <p className="text-[1.125rem] w-11/12">
+        <p className="text-base sm:text-[1.125rem] w-11/12">
           We offer a variety of spacious and stylish apartments to suit your
           needs. Whether you're a single professional, a couple, or a family, we
           have the ideal apartment for you. Explore our apartments:
@@ -156,7 +156,7 @@ const Explore = () => {
       </div>
       <div className="flex flex-col w-11/12 mt-8 px-4 md:px-10">
         <div className="">
-          <h4 className="text-[2.5rem] font-semibold">
+          <h4 className="text-3xl md:text-[2.5rem] font-semibold">
             Exquisite 3 bed House!
           </h4>
           <div className="flex justify-between items-center">
@@ -273,7 +273,7 @@ const Explore = () => {
                   </ul>
                 </div>
               </div> */}
-              <p className="text-[#040C07] text-lg mt-8 mb-2 w-full text-center">
+              <p className="text-[#040C07] font-semibold text-lg mt-8 mb-2 w-full text-center">
                 Book on
               </p>
               <div className="sm:flex w-full gap-4">
