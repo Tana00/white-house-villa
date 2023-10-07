@@ -6,6 +6,7 @@ import Explore from "./explore/page";
 import HowItWorks from "./how-it-works/page";
 import WhyUs from "./why-us/page";
 import Contact from "./contact-us/page";
+import Footer from "@/components/Footer";
 
 const Page = () => {
   return (
@@ -31,6 +32,7 @@ const Page = () => {
         </section>
       </main>
       <Newsletter />
+      <Footer />
     </div>
   );
 };

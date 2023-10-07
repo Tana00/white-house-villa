@@ -18,14 +18,7 @@ const RootLayout = ({ children }) => {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
-        <link
-          rel="stylesheet"
-          href="<NODE_MODULES_FOLDER>/react-responsive-carousel/lib/styles/carousel.min.css"
-        />
-        <script
-          defer
-          src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-        ></script>
+
         {/* <!-- Google tag (gtag.js) --> */}
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-P52QKLDNMS" />
         <Script id="google-analytics">
@@ -43,7 +36,7 @@ const RootLayout = ({ children }) => {
         <Nav />
         {children}
         {/* <Newsletter /> */}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

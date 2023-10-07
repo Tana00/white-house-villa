@@ -25,7 +25,7 @@ const ServicesLayout = ({ children }) => {
         <Nav />
         {children}
         <ContactUs />
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

@@ -36,6 +36,8 @@ import Experience2 from "../../public/assets/gallery/experience2.jpeg";
 import Workshop from "../../public/assets/gallery/workshop.jpeg";
 import Workshop1 from "../../public/assets/gallery/workshop1.jpeg";
 import Workshop2 from "../../public/assets/gallery/workshop2.jpeg";
+import Footer from "@/components/Footer";
+import Nav from "@/components/Nav";
 
 const attractionList = [
   {
@@ -119,27 +121,31 @@ const attractionList = [
 
 const Attractions = () => {
   return (
-    <section>
-      <div className="bg-[#F3FBF7] w-full h-full justify-center py-20 md:py-[180px]">
-        <div className="flex flex-1 w-full mx-auto text-center px-4 md:px-20 flex-col gap-6 items-center justify-center h-full text-[#040C07] mt-20 md:mt-0">
-          <h1 className="text-4xl md:text-[4rem] font-semibold text-[#040C07]">
-            Attractions
-          </h1>
-          <p className="text-base sm:text-lg font-medium px-4 md:px-32 text-[#040C07]">
-            Welcome to a world of exploration and discovery. White House Villa
-            is brimming with captivating attractions that cater to every
-            interest and age group. From historical landmarks to natural
-            wonders, cultural treasures to family-friendly adventures, there's
-            something here for everyone.
-          </p>
+    <>
+      <Nav />
+      <section>
+        <div className="bg-[#F3FBF7] w-full h-full justify-center py-20 md:py-[180px]">
+          <div className="flex flex-1 w-full mx-auto text-center px-4 md:px-20 flex-col gap-6 items-center justify-center h-full text-[#040C07] mt-20 md:mt-0">
+            <h1 className="text-4xl md:text-[4rem] font-semibold text-[#040C07]">
+              Attractions
+            </h1>
+            <p className="text-base sm:text-lg font-medium px-4 md:px-32 text-[#040C07]">
+              Welcome to a world of exploration and discovery. White House Villa
+              is brimming with captivating attractions that cater to every
+              interest and age group. From historical landmarks to natural
+              wonders, cultural treasures to family-friendly adventures, there's
+              something here for everyone.
+            </p>
+          </div>
         </div>
-      </div>
-      <div className="w-11/12 xl:w-4/5 2xl:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 my-20 mx-auto">
-        {attractionList?.map((site, siteIndex) => (
-          <Carousel key={siteIndex} site={site} />
-        ))}
-      </div>
-    </section>
+        <div className="w-11/12 xl:w-4/5 2xl:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 my-20 mx-auto">
+          {attractionList?.map((site, siteIndex) => (
+            <Carousel key={siteIndex} site={site} />
+          ))}
+        </div>
+      </section>
+      <Footer />
+    </>
   );
 };
 

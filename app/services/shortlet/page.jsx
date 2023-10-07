@@ -13,12 +13,12 @@ const Shortlet = () => {
               Unwind in Luxurious Airbnb Retreats.
             </h1>
 
-            <p className="mt-4 max-w-lg sm:text-xl/relaxed">
+            <p className="m-4 md:mb-0 md:mx-0 max-w-lg sm:text-xl/relaxed">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
               illo tenetur fuga ducimus numquam ea!
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4 text-center">
+            <div className="m-8 md:mb-0 md:mx-0 flex flex-wrap gap-4 text-center">
               <a
                 href="https://www.airbnb.co.uk/rooms/977242512291600380?guests=1&adults=1&s=13&unique_share_id=04e5a211-83e6-4458-9847-b763cd49a3e9"
                 target="_blank"
