@@ -11,7 +11,7 @@ const About = () => {
         <h3 className="text-3xl sm:text-4xl md:text-[2.5rem] font-semibold leading-none text-[#040C07]">
           About Us
         </h3>
-        <p className="text-base sm:text-[1.125rem] w-full md:w-11/12">
+        <p className="text-sm sm:text-[1.125rem] w-full md:w-11/12">
           At White House Villa dedicated to helping you find the perfect place
           to call home. Whether you're searching for a cozy apartment, a
           spacious family house, or a luxury villa, we have a wide range of
@@ -27,7 +27,7 @@ const About = () => {
           // placeholder="blur"
         />
         <h4 className="text-[1.5rem] font-semibold text-black">For Guests</h4>
-        <p className="home-text text-base sm:text-[1.125rem] mt-[-30px] text-[#484848]">
+        <p className="home-text text-sm sm:text-[1.125rem] mt-[-30px] text-[#484848]">
           Discover the perfect retreat for any occasion, whether it's a romantic
           getaway or a family vacation, with our curated selection of
           accommodations. Explore a diverse range of options, from cozy

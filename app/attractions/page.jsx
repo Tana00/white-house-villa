@@ -129,7 +129,7 @@ const Attractions = () => {
             <h1 className="text-4xl md:text-[4rem] font-semibold text-[#040C07]">
               Attractions
             </h1>
-            <p className="text-base sm:text-lg font-medium px-4 md:px-32 text-[#040C07]">
+            <p className="text-sm sm:text-lg font-medium px-4 md:px-32 text-[#040C07]">
               Welcome to a world of exploration and discovery. White House Villa
               is brimming with captivating attractions that cater to every
               interest and age group. From historical landmarks to natural

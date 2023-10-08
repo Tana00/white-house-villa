@@ -102,7 +102,7 @@ const Explore = () => {
         <h3 className="text-3xl sm:text-4xl md:text-[2.5rem] font-semibold leading-none text-[#040C07]">
           Book Now
         </h3>
-        <p className="text-base sm:text-[1.125rem] w-11/12">
+        <p className="text-[0.95rem] sm:text-[1.125rem] w-11/12">
           We offer a variety of spacious and stylish apartments to suit your
           needs. Whether you're a single professional, a couple, or a family, we
           have the ideal apartment for you. Explore our apartments:
@@ -184,7 +184,7 @@ const Explore = () => {
 
         <div className="flex flex-col gap-4 lg:flex-row justify-between lg:items-start">
           <div>
-            <h4 className="text-[1.5rem] font-semibold mt-2 mb-8">
+            <h4 className="text-[1.2rem] sm:text-[1.5rem] font-semibold mt-2 mb-8">
               What this place offers
             </h4>
             <div className="grid grid-cols-2 items-center gap-7 gap-x-16">
@@ -213,13 +213,13 @@ const Explore = () => {
                     </span>
                   </p>
                 </div>
-                <div className="flex items-center mt-8">
+                <div className="flex flex-col sm:flex-row items-center mt-8">
                   <p className="text-[#040C07] font-medium text-base w-full">
                     Instant Booking
                   </p>
                   <a
                     href="#contact"
-                    className="ml-2 flex items-center justify-center gap-2 bg-primary-green border border-primary-green p-2 px-4 rounded-md w-full cursor-pointer hover:bg-primary-green/90 transition-all"
+                    className="sm:ml-2 flex items-center justify-center gap-2 bg-primary-green border border-primary-green p-2 px-4 rounded-md w-full cursor-pointer hover:bg-primary-green/90 transition-all"
                   >
                     <p className="text-white text-lg">Book Now</p>
                   </a>
