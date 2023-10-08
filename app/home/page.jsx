@@ -12,7 +12,7 @@ const Home = () => {
           Your <span className="text-primary-green">Home</span> Away from{" "}
           <span className="text-primary-green">Home.</span>
         </h1>
-        <p className="text-[1.125rem] home-text border-l-2 border-primary-green pl-4">
+        <p className="text-[1.125rem] md:text-xl home-text border-l-2 border-primary-green pl-4">
           At White House Villa, we're passionate about connecting travelers with
           unique accommodations and experiences around the world. Whether you're
           a host looking to share your space or a guest seeking memorable stays,
