@@ -25,7 +25,7 @@ const servicesMenu = [
   {
     label: "Training",
     icon: photoshootIcon,
-    href: "/",
+    href: "/home",
   },
 ];
 
@@ -131,8 +131,6 @@ const Nav = () => {
   // ||
   // pathname?.includes("dressing") ||
   // pathname?.includes("photo-shoot");
-
-  console.log(activeSection);
 
   return (
     <nav
