@@ -20,6 +20,14 @@ const Home = () => {
           your space or a guest seeking memorable stays, our platform has you
           covered.Whether you're a host looking to share your space or a guest
           seeking memorable stays, our platform has you covered.
+          <br /> At White House Villa, we're passionate about connecting
+          travelers with unique accommodations and experiences around the world.
+          Whether you're a host looking to share your space or a guest seeking
+          memorable stays, our platform has you covered. Whether you're a host
+          looking to share your space or a guest seeking memorable stays, our
+          platform has you covered.Whether you're a host looking to share your
+          space or a guest seeking memorable stays, our platform has you
+          covered.
         </p>
         <Link href="/#explore">
           <button className="bg-primary-green text-white px-6 py-3 rounded-md hover:bg-transparent hover:text-primary-green hover:border hover:border-primary-green hover:transition duration-300 ease-in-out">
