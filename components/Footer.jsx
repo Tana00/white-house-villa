@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <div className="w-full md:h-[55vh] p-4 md:pt-10 flex flex-col justify-between items-center bg-[#f7f7f7]">
       <div className="flex flex-col md:flex-row w-full md:w-4/5 p-4 h-11/12 justify-between gap-8 md:gap-0">
-        <div className="flex flex-col justify-between md:gap-8">
+        <div className="flex flex-col justify-evenly md:gap-8">
           <div className="flex gap-4 flex-col text-black">
             <Image
               className="relative w-[88px] h-[71px] md:w-[88px] md:h-[71px]"
@@ -32,25 +32,49 @@ const Footer = () => {
           </div>
         </div>
         {/* <div className="flex sm:flex-row flex-col justify-between gap-12 md:gap-32 mt-8 md:mt-0"> */}
-        {/* <div className="flex flex-col ">
-            <h4 className="text-[1.125rem] font-medium">Quick Links</h4>
+        <div className="flex flex-col">
+          <h4 className="text-[1.125rem] font-medium">Quick Links</h4>
 
-            <div className="flex flex-col gap-4 mt-4">
-              <Link href="/" className="text-[#484848] text-lg">
-                Home
-              </Link>
-              <Link href="/about" className="text-[#484848] text-lg">
-                About Us
-              </Link>
-              <Link href="/explore" className="text-[#484848] text-lg">
+          <div className="flex flex-col gap-4 mt-4">
+            <Link href="/" className="text-[#484848] text-lg">
+              Home
+            </Link>
+            <Link href="/about" className="text-[#484848] text-lg">
+              About Us
+            </Link>
+            <Link href="/explore" className="text-[#484848] text-lg">
+              Explore
+            </Link>
+            <Link href="/contact" className="text-[#484848] text-lg">
+              Contact Us
+            </Link>
+          </div>
+        </div>
+        <div className="flex flex-col">
+          <h4 className="text-[1.125rem] font-medium">Legal</h4>
+
+          <div className="flex flex-col gap-4 mt-4">
+            <Link
+              href="/terms-of-service"
+              className="text-[#484848] text-lg hover:text-primary-green"
+            >
+              Terms of Service
+            </Link>
+            <Link
+              href="/privacy-policy"
+              className="text-[#484848] text-lg hover:text-primary-green"
+            >
+              Privacy Policy
+            </Link>
+            {/* <Link href="/explore" className="text-[#484848] text-lg">
                 Explore
               </Link>
               <Link href="/contact" className="text-[#484848] text-lg">
                 Contact Us
-              </Link>
-            </div>
-          </div> */}
-        <div className="">
+              </Link> */}
+          </div>
+        </div>
+        <div className="flex flex-col">
           <h4 className="text-[1.125rem] font-medium">Contact Us</h4>
           <div className="flex flex-col gap-8 mt-4">
             <div className="flex items-center gap-2">
@@ -91,30 +115,6 @@ const Footer = () => {
                 whitehousevilla23@gmail.com
               </p>
             </div>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <h4 className="text-[1.125rem] font-medium">Legal</h4>
-
-          <div className="flex flex-col gap-4 mt-4">
-            <Link
-              href="/terms-of-service"
-              className="text-[#484848] text-lg hover:text-primary-green"
-            >
-              Terms of Service
-            </Link>
-            <Link
-              href="/privacy-policy"
-              className="text-[#484848] text-lg hover:text-primary-green"
-            >
-              Privacy Policy
-            </Link>
-            {/* <Link href="/explore" className="text-[#484848] text-lg">
-                Explore
-              </Link>
-              <Link href="/contact" className="text-[#484848] text-lg">
-                Contact Us
-              </Link> */}
           </div>
         </div>
       </div>
