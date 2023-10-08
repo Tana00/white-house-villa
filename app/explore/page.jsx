@@ -181,30 +181,55 @@ const Explore = () => {
           </div> */}
         </div>
         <hr className="my-4" />
-        <h4 className="text-[1.5rem] font-semibold">What this place offers</h4>
-        <div className="flex flex-col gap-4 lg:flex-row justify-between lg:items-center my-4">
-          <div className="grid grid-cols-2 items-center gap-7 gap-x-16">
-            {features.map((feature) => (
-              <div key={feature.id} className="flex items-center gap-2">
-                {feature.icon}
-                <p className="text-[#484848] text-lg">{feature.title}</p>
-              </div>
-            ))}
+
+        <div className="flex flex-col gap-4 lg:flex-row justify-between lg:items-start">
+          <div>
+            <h4 className="text-[1.5rem] font-semibold mt-2 mb-8">
+              What this place offers
+            </h4>
+            <div className="grid grid-cols-2 items-center gap-7 gap-x-16">
+              {features.map((feature) => (
+                <div key={feature.id} className="flex items-center gap-2">
+                  {feature.icon}
+                  <p className="text-[#484848] text-lg">{feature.title}</p>
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="relative w-full lg:w-[400px] lg:h-[300px] my-8 lg:mt-0 flex items-center justify-center bg-[#F7F7F7] py-6 px-8 rounded-2xl">
-            <div className="w-full">
-              <div>
-                <p className="text-[#484848] text-lg flex items-center justify-between font-medium">
-                  Starting from
-                  <span>
-                    <span className="text-primary-green font-semibold text-[22px]">
-                      £ 160
+          <div>
+            {/* <h4 className="text-[1.5rem] font-semibold mt-2 mb-6">
+              Booking Options
+            </h4> */}
+            <div className="relative w-full lg:w-[400px] h-full my-8 lg:mt-2 flex items-center justify-center bg-[#F7F7F7] py-6 px-8 rounded-2xl">
+              <div className="w-full">
+                <div>
+                  <p className="text-[#484848] text-lg flex items-center justify-start font-medium">
+                    Starting from
+                    <span className="pl-5">
+                      <span className="text-primary-green font-semibold text-[20px]">
+                        £ 160
+                      </span>
+                      /night
                     </span>
-                    /night
-                  </span>
-                </p>
-              </div>
-              {/* <p className="text-[#040C07] text-base mt-4">Number of Guests</p>
+                  </p>
+                </div>
+                <div className="flex items-center mt-8">
+                  <p className="text-[#040C07] font-medium text-base w-full">
+                    Instant Booking
+                  </p>
+                  <a
+                    href="#contact"
+                    className="ml-2 flex items-center justify-center gap-2 bg-primary-green border border-primary-green p-2 px-4 rounded-md w-full cursor-pointer hover:bg-primary-green/90 transition-all"
+                  >
+                    <p className="text-white text-lg">Book Now</p>
+                  </a>
+                </div>
+                <div className="flex items-center justify-center mt-12 mb-8 w-full">
+                  <div className="border-t border-[#226E4633] w-1/2"></div>
+                  <div className="mx-4 text-[#484848] font-semibold">Or</div>
+                  <div className="border-t border-[#226E4633] w-1/2"></div>
+                </div>
+                {/* <p className="text-[#040C07] text-base mt-4">Number of Guests</p>
               <div
                 onClick={() => setDropdownOpen(!dropdownOpen)}
                 className="relative flex items-center justify-between w-full h-12 bg-white rounded-md mt-2 text-sm px-4 cursor-pointer"
@@ -273,28 +298,29 @@ const Explore = () => {
                   </ul>
                 </div>
               </div> */}
-              <p className="text-[#040C07] font-semibold text-lg mt-8 mb-2 w-full text-center">
-                Book on
-              </p>
-              <div className="sm:flex w-full gap-4">
-                <a
-                  href="https://www.airbnb.co.uk/rooms/977242512291600380?guests=1&adults=1&s=13&unique_share_id=04e5a211-83e6-4458-9847-b763cd49a3e9"
-                  target="_blank"
-                  className="flex items-center justify-center gap-2 bg-[#FF5A60] p-2 px-6 rounded-md mt-2 w-full cursor-pointer hover:bg-[#d0484c]"
-                >
-                  <FaAirbnb className="w-6 h-6 text-white" />
-                  <p className="text-white text-lg">Airbnb</p>
-                </a>
-                <a
-                  href="https://www.booking.com/hotel/gb/white-house-villa.en-gb.html?age=0&aid=866831&app_hotel_id=10742807&checkin=2023-10-03&checkout=2023-10-05&from_sn=ios&group_adults=6&group_children=1&label=Share-aEOkjk%401696166832&no_rooms=1&req_adults=6&req_age=0&req_children=1&room1=A%2CA%2CA%2CA%2CA%2CA%2C0%2C"
-                  target="_blank"
-                  className="flex items-center justify-center gap-2 bg-blue-700 mt-2 p-2 px-4 rounded-md w-full cursor-pointer hover:bg-blue-800 transition-all"
-                >
-                  <p className="text-white text-lg">
-                    Booking
-                    <span className="text-blue-400 text-lg">.com</span>
-                  </p>
-                </a>
+                <p className="text-[#040C07] font-medium text-base mb-2 w-full">
+                  Book on
+                </p>
+                <div className="sm:flex w-full gap-4">
+                  <a
+                    href="https://www.airbnb.co.uk/rooms/977242512291600380?guests=1&adults=1&s=13&unique_share_id=04e5a211-83e6-4458-9847-b763cd49a3e9"
+                    target="_blank"
+                    className="flex items-center justify-center gap-2 bg-[#FF5A60] p-2 px-6 rounded-md mt-2 w-full cursor-pointer hover:bg-[#d0484c]"
+                  >
+                    <FaAirbnb className="w-6 h-6 text-white" />
+                    <p className="text-white text-lg">Airbnb</p>
+                  </a>
+                  <a
+                    href="https://www.booking.com/hotel/gb/white-house-villa.en-gb.html?age=0&aid=866831&app_hotel_id=10742807&checkin=2023-10-03&checkout=2023-10-05&from_sn=ios&group_adults=6&group_children=1&label=Share-aEOkjk%401696166832&no_rooms=1&req_adults=6&req_age=0&req_children=1&room1=A%2CA%2CA%2CA%2CA%2CA%2C0%2C"
+                    target="_blank"
+                    className="flex items-center justify-center gap-2 bg-blue-700 mt-2 p-2 px-4 rounded-md w-full cursor-pointer hover:bg-blue-800 transition-all"
+                  >
+                    <p className="text-white text-lg">
+                      Booking
+                      <span className="text-blue-400 text-lg">.com</span>
+                    </p>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

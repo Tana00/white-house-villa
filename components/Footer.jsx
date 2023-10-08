@@ -39,13 +39,13 @@ const Footer = () => {
             <Link href="/" className="text-[#484848] text-lg">
               Home
             </Link>
-            <Link href="/about" className="text-[#484848] text-lg">
+            <Link href="/#about" className="text-[#484848] text-lg">
               About Us
             </Link>
-            <Link href="/explore" className="text-[#484848] text-lg">
+            <Link href="/#explore" className="text-[#484848] text-lg">
               Explore
             </Link>
-            <Link href="/contact" className="text-[#484848] text-lg">
+            <Link href="/#contact" className="text-[#484848] text-lg">
               Contact Us
             </Link>
           </div>

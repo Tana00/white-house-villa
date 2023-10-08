@@ -23,9 +23,9 @@ const servicesMenu = [
     href: "dressing",
   },
   {
-    label: "Studio/Photoshoot",
+    label: "Training",
     icon: photoshootIcon,
-    href: "studio",
+    href: "/",
   },
 ];
 
@@ -131,6 +131,8 @@ const Nav = () => {
   // ||
   // pathname?.includes("dressing") ||
   // pathname?.includes("photo-shoot");
+
+  console.log(activeSection);
 
   return (
     <nav
