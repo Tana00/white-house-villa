@@ -23,7 +23,7 @@ const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const subject = "Contact Us";
-    const body = `Name: ${formData.firstName} ${formData.lastName}%0D%0AEmail: ${formData.email}%0D%0APhone Number: ${formData.phoneNumber}%0D%0AMessage: ${formData.message}`;
+    const body = `Name: ${formData.firstName} ${formData.lastName}\n\nEmail: ${formData.email}\n\nPhone Number: ${formData.phoneNumber}\n\nMessage: ${formData.message}`;
 
     const mailtoLink = `mailto:whitehousevilla23@gmail.com?subject=${encodeURIComponent(
       subject
