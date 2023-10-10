@@ -197,11 +197,11 @@ const Explore = () => {
             </div>
           </div>
           <div>
-            {/* <h4 className="text-[1.5rem] font-semibold mt-2 mb-6">
-              Booking Options
-            </h4> */}
             <div className="relative w-full lg:w-[400px] h-full my-8 lg:mt-2 flex items-center justify-center bg-[#F7F7F7] py-6 px-8 rounded-2xl">
               <div className="w-full">
+                <h4 className="text-[1.5rem] font-semibold mt-2 mb-4">
+                  Booking Options
+                </h4>
                 <div>
                   <p className="text-[#484848] text-lg flex items-center justify-start font-medium">
                     Starting from
@@ -213,21 +213,18 @@ const Explore = () => {
                     </span>
                   </p>
                 </div>
-                <div className="flex flex-col sm:flex-row items-center mt-8">
+                <div className="flex flex-col items-start justify-start mt-8">
                   <p className="text-[#040C07] font-medium text-base w-full">
-                    Instant Booking
+                    Instant Booking, Call Us on
                   </p>
-                  <a
-                    href="#contact"
-                    className="sm:ml-2 flex items-center justify-center gap-2 bg-primary-green border border-primary-green p-2 px-4 rounded-md w-full cursor-pointer hover:bg-primary-green/90 transition-all"
-                  >
-                    <p className="text-white text-lg">Book Now</p>
-                  </a>
+                  <p className="text-[#040C07] text-lg font-semibold">
+                    07396 758528
+                  </p>
                 </div>
-                <div className="flex items-center justify-center mt-12 mb-8 w-full">
-                  <div className="border-t border-[#226E4633] w-1/2"></div>
+                <div className="flex items-center justify-center my-8 mx-auto w-full">
+                  <div className="border-t border-[#226E4633] w-full"></div>
                   <div className="mx-4 text-[#484848] font-semibold">Or</div>
-                  <div className="border-t border-[#226E4633] w-1/2"></div>
+                  <div className="border-t border-[#226E4633] w-full"></div>
                 </div>
                 {/* <p className="text-[#040C07] text-base mt-4">Number of Guests</p>
               <div
