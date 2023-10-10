@@ -16,13 +16,13 @@ const Home = () => {
       <div className="absolute inset-0 bg-[#F3FBF7] bg-transparent from-[#F3FBF7]/80 via-[#F3FBF7]/80 to-[#F3FBF700]/80 md:from-[#F3FBF7] md:via-[#F3FBF7]/90 md:to-[#F3FBF700]/0 bg-gradient-to-r"></div>
       <div className="relative lg:ml-20 w-full px-4 py-32 pt-36 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
         <div className="text-center md:text-left">
-          <h1 className="w-full text-3xl sm:text-4xl md:text-5xl font-extrabold lg:text-6xl xl:text-7xl 2xl:text-[5.5rem] ">
+          <h1 className="w-full text-3xl sm:text-4xl md:text-5xl font-extrabold lg:text-6xl xl:text-7xl 2xl:text-[5.5rem]">
             Your <span className="text-primary-green">Home</span> Away <br />{" "}
             from
             <span className="text-primary-green pl-2">Home.</span>
           </h1>
 
-          <p className="2xl:my-4 w-11/12 mx-auto md:mr-auto sm:w-2/3 lg:w-3/5 lg:m-4 my-4 md:mb-0 md:mx-0 text-base sm:text-lg/relaxed md:text-[1.3rem] lg:text-[1.2rem] xl:text-[1.5rem] 2xl:text-[1.5rem] 2xl:mt-4 2xl:leading-[3rem] md:border-l-2 md:border-primary-green md:pl-4">
+          <p className="2xl:my-4 w-11/12 mx-auto md:mr-auto sm:w-2/3 lg:w-3/5 lg:m-4 my-4 md:mb-0 md:mx-0 text-base sm:text-lg/relaxed md:text-[1.3rem] lg:text-[1.2rem] xl:text-[1.5rem] 2xl:text-[1.35rem] 2xl:mt-4 2xl:leading-[2rem] md:border-l-2 md:border-primary-green md:pl-4">
             At White House Villa, we're passionate about connecting travelers
             with unique accommodations and experiences around the world. Whether
             you're a host looking to share your space or a guest seeking

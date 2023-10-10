@@ -14,7 +14,6 @@ import { RxDimensions } from "react-icons/rx";
 import { GiCctvCamera } from "react-icons/gi";
 import { FaAirbnb } from "react-icons/fa";
 import Image from "next/image";
-import { BsFillEyeFill } from "react-icons/bs";
 
 export const features = [
   {
@@ -215,7 +214,7 @@ const Explore = () => {
                 </div>
                 <div className="flex flex-col items-start justify-start mt-8">
                   <p className="text-[#040C07] font-medium text-base w-full">
-                    Instant Booking, Call Us on
+                    Instant Book? Call us on
                   </p>
                   <p className="text-[#040C07] text-lg font-semibold">
                     07396 758528
