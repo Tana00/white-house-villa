@@ -213,18 +213,15 @@ const Explore = () => {
                     </span>
                   </p>
                 </div>
-                <div className="flex flex-col sm:flex-row items-center mt-8">
+                <div className="flex flex-col items-start justify-start mt-8">
                   <p className="text-[#040C07] font-medium text-base w-full">
-                    Instant Booking
+                    Instant Book. Call Us
                   </p>
-                  <a
-                    href="#contact"
-                    className="sm:ml-2 flex items-center justify-center gap-2 bg-primary-green border border-primary-green p-2 px-4 rounded-md w-full cursor-pointer hover:bg-primary-green/90 transition-all"
-                  >
-                    <p className="text-white text-lg">Book Now</p>
-                  </a>
+                  <p className="text-[#040C07] text-lg font-semibold">
+                    07396 758528
+                  </p>
                 </div>
-                <div className="flex items-center justify-center mt-12 mb-8 w-full">
+                <div className="flex items-center justify-center m-8 w-full">
                   <div className="border-t border-[#226E4633] w-1/2"></div>
                   <div className="mx-4 text-[#484848] font-semibold">Or</div>
                   <div className="border-t border-[#226E4633] w-1/2"></div>
