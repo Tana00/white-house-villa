@@ -214,7 +214,7 @@ const Explore = () => {
                 </div>
                 <div className="flex flex-col items-start justify-start mt-8">
                   <p className="text-[#040C07] font-medium text-base w-full">
-                    Instant Booking? Call us on
+                    Instant Booking? Please call us on
                   </p>
                   <p className="text-[#040C07] text-lg font-semibold">
                     07396 758528

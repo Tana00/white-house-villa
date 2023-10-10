@@ -41,7 +41,7 @@ const FAQItem = ({ header, text }) => {
           active ? "block" : "hidden"
         }`}
       >
-        <p className="py-3 text-base leading-relaxed text-body-color">{text}</p>
+        <p className="py-3 text-sm leading-loose text-[#484848]">{text}</p>
       </div>
     </div>
   );
@@ -71,30 +71,42 @@ const FAQ = () => {
         <div className="w-full flex flex-wrap md:w-4/5 mx-auto">
           <div className="w-full px-4 lg:w-1/2 mx-auto">
             <FAQItem
-              header="How long can I stay?"
-              text="Our property is available for both short-term and long-term stays. We welcome guests for a maximum stay of [insert number] nights. If you have any specific requests or need accommodations for a longer period, feel free to reach out, and we can discuss the details."
+              header="How long can I rent for?"
+              text="Stay for as long as you like! If you need to be here for three days or three months we can offer you comfortable short term accommodation. There is no maximum term and many of the properties are available for periods in excess of six months."
             />
             <FAQItem
-              header="How long can I stay?"
-              text="Our property is available for both short-term and long-term stays. We welcome guests for a maximum stay of [insert number] nights. If you have any specific requests or need accommodations for a longer period, feel free to reach out, and we can discuss the details."
+              header="What happens when I arrive?"
+              text="We will arrange your arrival well before you get here.  Arrival times vary between 14.00-16.00 – please consult individual property details. For very late arrivals we often suggest a cab company for transfer and for keys, we will give you the code to access the property prior to arrival."
             />
             <FAQItem
-              header="How long can I stay?"
-              text="Our property is available for both short-term and long-term stays. We welcome guests for a maximum stay of [insert number] nights. If you have any specific requests or need accommodations for a longer period, feel free to reach out, and we can discuss the details."
+              header="How many people can stay?"
+              text="The number of people permitted to stay in a short term apartment rentals will vary – please check the property description for exact details. After you make your booking, only the people listed on the booking agreement are entitled to stay at the property."
+            />
+            <FAQItem
+              header="May I view the Apartment?"
+              text="Viewings can usually be arranged between short lets when the flat is being prepared.  This avoids disturbing the current occupant. If you have requested a viewing please keep in mind that the property can not be held for you until you visit. Short let rentals are promoted worldwide, booked on-line and availability changes frequently. 99% of our clients book from abroad and do not view homes before they rent. We  provide comprehensive information on the website so that “what you see is what you get”. This includes a thorough property description including locale, an accurate Google map, a complete portfolio of current photographs, plus the very important “Small Print” section. We want you to understand the nitty, gritty, practical side of renting an apartment so that you can feel confident to stay with us."
             />
           </div>
           <div className="w-full px-4 lg:w-1/2 mx-auto">
             <FAQItem
-              header="How long can I stay?"
-              text="Our property is available for both short-term and long-term stays. We welcome guests for a maximum stay of [insert number] nights. If you have any specific requests or need accommodations for a longer period, feel free to reach out, and we can discuss the details."
+              header="How much does it cost?"
+              text="Our short term apartment rentals are offered at attractive rates, competitively priced for the market. Rental rates change depending on the time of year, the number of people staying at the flat and the length of stay. The rate for your stay can easily be calculated on any of the short let apartments on our website."
             />
             <FAQItem
-              header="How long can I stay?"
-              text="Our property is available for both short-term and long-term stays. We welcome guests for a maximum stay of [insert number] nights. If you have any specific requests or need accommodations for a longer period, feel free to reach out, and we can discuss the details."
+              header="Do I pay a damage deposit?"
+              text="Yes, either as a set amount or pre-authorised against your credit card. The funds may be used to replace damaged items, or for remedial cleaning, if required."
             />
             <FAQItem
-              header="How long can I stay?"
-              text="Our property is available for both short-term and long-term stays. We welcome guests for a maximum stay of [insert number] nights. If you have any specific requests or need accommodations for a longer period, feel free to reach out, and we can discuss the details."
+              header="How large is my bed?"
+              text="Single, twin or bunk bed: 90 cm x 190 cm (3' 0″ x 6' 3″)
+              Small-double: 120 cm x 190 cm (4' 0″ x 6' 3″)
+              Double bed: 135 cm x 190 cm (4' 6″ x 6' 3″)
+              Kingsize bed: 150 cm x 200 cm (5' 0″ x 6' 6″)
+              Super kingsize bed: 180 cm x 200 cm (6' 0″ x 6' 6″)"
+            />
+            <FAQItem
+              header="What is included in the rate?"
+              text="Utilities and property expenses such as gas, electricity, water, wifi, TV license and council tax are all included. Self-catering accommodation will be professionally cleaned before you arrive and exit-cleaning is included. Linen, towels, starter toiletries and consumables such as soap, toilet paper and cleaning products are provided for your arrival but are not replenished. Serviced apartment providers include a weekly clean and linen change for stays of 7 nights or more. Telephone usage is charged separately as are any extras you may select, for example a hamper, extra cleaning, baby cot etc. VAT is not included. Where VAT applies it is charged at 20% for the first 28 nights and 4% thereafter. Please read the Small Print on the property details to check if VAT applies to your home."
             />
           </div>
         </div>

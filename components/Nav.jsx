@@ -22,11 +22,11 @@ const servicesMenu = [
     icon: dressingIcon,
     href: "dressing",
   },
-  {
-    label: "Training",
-    icon: photoshootIcon,
-    href: "/home",
-  },
+  // {
+  //   label: "Training",
+  //   icon: photoshootIcon,
+  //   href: "/home",
+  // },
 ];
 
 const companyMenu = [
