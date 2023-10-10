@@ -22,7 +22,7 @@ const Home = () => {
             <span className="text-primary-green pl-2">Home.</span>
           </h1>
 
-          <p className="2xl:my-4 w-11/12 mx-auto md:mr-auto sm:w-2/3 lg:w-3/5 lg:m-4 my-4 md:mb-0 md:mx-0 text-base sm:text-lg/relaxed md:text-[1.3rem] lg:text-[1.2rem] xl:text-[1.5rem] 2xl:text-[1.35rem] 2xl:mt-4 2xl:leading-[2rem] md:border-l-2 md:border-primary-green md:pl-4">
+          <p className="2xl:my-4 w-11/12 mx-auto md:mr-auto sm:w-2/3 lg:w-3/5 lg:m-4 my-4 md:mb-0 md:mx-0 text-base sm:text-lg/relaxed md:text-[1.3rem] lg:text-[1.2rem] xl:text-[1.25rem] 2xl:text-[1.35rem] 2xl:mt-4 2xl:leading-[2rem] md:border-l-2 md:border-primary-green md:pl-4">
             At White House Villa, we're passionate about connecting travelers
             with unique accommodations and experiences around the world. Whether
             you're a host looking to share your space or a guest seeking
