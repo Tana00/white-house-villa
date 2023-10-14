@@ -36,7 +36,7 @@ const Dressing = () => {
             <div className="w-full text-[#484848]">
               <p className="text-[16px] leading-8">
                 <ul className="list-disc ml-6 my-4 text-lg text-[#484848]">
-                  <div className="flex items-start justify-between">
+                  <div className="flex flex-col md:flex-row items-start justify-between">
                     <li className="my-3 leading-8 w-full md:w-[46%]">
                       <strong>Professional Decor:</strong> We will work closely
                       with you to create a stylish and unique decor for your
@@ -50,7 +50,7 @@ const Dressing = () => {
                       make their stay even more enjoyable.
                     </li>
                   </div>
-                  <div className="flex items-start justify-between mt-5">
+                  <div className="flex flex-col md:flex-row items-start justify-between mt-5">
                     <li className="my-3 leading-8 w-full md:w-[46%]">
                       <strong>Themed Decor: </strong> If you desire a theme,
                       era, or style for your property, we can bring it to life.
@@ -82,7 +82,7 @@ const Dressing = () => {
               <div className="w-full text-[#484848]">
                 <p className="text-[16px] leading-8">
                   <ul className="list-disc ml-6 my-4 text-lg text-[#484848]">
-                    <div className="flex items-start justify-between">
+                    <div className="flex flex-col md:flex-row items-start justify-between">
                       <li className="my-3 leading-8 w-full md:w-[46%]">
                         <strong>Enhance Guest Experience: </strong> A
                         well-designed and stylish property can significantly
@@ -96,7 +96,7 @@ const Dressing = () => {
                         bookings.
                       </li>
                     </div>
-                    <div className="flex items-start justify-between mt-5">
+                    <div className="flex flex-col md:flex-row items-start justify-between mt-5">
                       <li className="my-3 leading-8 w-full md:w-[46%]">
                         <strong>Increase Property Value: </strong> A beautifully
                         decorated property often commands higher rental rates,
@@ -173,7 +173,7 @@ const Dressing = () => {
         <h3 className="font-semibold text-2xl md:text-3xl mt-2 text-[#040C07]">
           How to Book Our Glam & Quirky Service
         </h3>
-        <p className="text-xl leading-10 text-[#484848] w-full md:w-10/12 mx-auto mt-5 mb-10">
+        <p className="text-lg md:text-xl leading-10 text-[#484848] w-full md:w-10/12 mx-auto mt-5 mb-10">
           Booking our Glam & Quirky Service is straightforward. Simply get in
           touch with our team and share your property's details, your vision,
           and any specific requirements. We will work closely with you to bring

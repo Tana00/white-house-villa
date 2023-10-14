@@ -124,7 +124,7 @@ const attractionList = [
     id: 12,
     images: [NotthinghamCastle, NotthinghamCastle1, NotthinghamCastle2],
     title: "Nottingham Castle:",
-    type: "A prominent feature in the city&#39;s skyline, Nottingham Castle has a history dating back to the 11th century. It has served as a royal residence, a stronghold, and now as a museum. It offers a fascinating glimpse into the city's historical and artistic heritage.",
+    type: "A prominent feature in the city's skyline, Nottingham Castle has a history dating back to the 11th century. It has served as a royal residence, a stronghold, and now as a museum. It offers a fascinating glimpse into the city's historical and artistic heritage.",
     rating: "5.0",
   },
 ];
@@ -151,24 +151,13 @@ const Attractions = () => {
             </p>
           </div>
         </div>
-        {/* <div className="w-11/12 xl:w-4/5 2xl:w-3/4 mx-auto text-center my-20">
-          <h3 className="text-center text-2xl md:text-3xl font-semibold mt-2 text-[#040C07]">
-            Local Attractions
-          </h3>
-          <p className="text-xl leading-7 text-[#484848] mt-6">
-            Mapperley is a vibrant neighborhood in Nottingham, offering a unique
-            blend of urban and suburban living. As you explore this charming
-            area, you'll find plenty of activities and attractions to keep you
-            engaged:
-          </p>
-        </div> */}
-        <div className="w-11/12 xl:w-4/5 2xl:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 mt-20 mb-36 mx-auto">
+        <div className="w-11/12 xl:w-4/5 2xl:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 mt-20 mb-20 md:mb-36 mx-auto">
           {attractionList?.map((site, siteIndex) => (
             <Carousel key={siteIndex} site={site} />
           ))}
         </div>
         <div className="bg-[#ebf0ee] w-full md:mt-10 p-10 md:p-20 text-center">
-          <p className="text-xl leading-10 text-[#484848] w-full md:w-10/12 mx-auto">
+          <p className="text-lg md:text-xl leading-10 text-[#484848] w-full md:w-10/12 mx-auto">
             As you explore Nottingham, you'll uncover a city that seamlessly
             blends its historical charm with modern vibrancy. It's a place where
             legends, industry, and culture converge, offering a truly unique and
