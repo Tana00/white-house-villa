@@ -113,14 +113,6 @@ const Explore = () => {
           {/*  4 small cards with the images as the background */}
           <div className="w-full xl:h-full rounded-2xl h-[240px]">
             <Image
-              src={pic6}
-              alt="pic1"
-              className="w-full h-full object-cover rounded-2xl"
-              placeholder="blur"
-            />
-          </div>
-          <div className="w-full xl:h-full rounded-2xl h-[240px]">
-            <Image
               src={pic2}
               alt="pic1"
               className="w-full h-full object-cover rounded-2xl"
@@ -130,6 +122,14 @@ const Explore = () => {
           <div className="w-full xl:h-full rounded-2xl h-[240px]">
             <Image
               src={pic3}
+              alt="pic1"
+              className="w-full h-full object-cover rounded-2xl"
+              placeholder="blur"
+            />
+          </div>
+          <div className="w-full xl:h-full rounded-2xl h-[240px]">
+            <Image
+              src={pic6}
               alt="pic1"
               className="w-full h-full object-cover rounded-2xl"
               placeholder="blur"

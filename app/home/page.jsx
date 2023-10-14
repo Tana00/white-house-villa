@@ -23,10 +23,18 @@ const Home = () => {
           </h1>
 
           <p className="2xl:my-4 w-11/12 mx-auto md:mr-auto sm:w-2/3 lg:w-3/5 lg:m-4 my-4 md:mb-0 md:mx-0 text-base sm:text-lg/relaxed md:text-[1.3rem] lg:text-[1.2rem] xl:text-[1.25rem] 2xl:text-[1.35rem] 2xl:mt-4 2xl:leading-[2rem] md:border-l-2 md:border-primary-green md:pl-4">
-            At White House Villa, we're passionate about connecting travelers
-            with unique accommodations and experiences around the world. Whether
-            you're a host looking to share your space or a guest seeking
-            memorable stays, our platform has you covered.
+            Discover comfort, convenience, and style at our serviced
+            accommodation in Mapperley. Whether you're visiting for business or
+            leisure, we provide a welcoming and cozy atmosphere that's perfect
+            for your stay. Explore our spacious accommodations, exceptional
+            amenities, and the charm of Mapperley - your gateway to Nottingham's
+            best experiences.
+            {/* <br />
+            Whitehouse Villas is your premier choice for a home away from home
+            in Nottingham. Our goal is to make your stay in Mapperley as
+            enjoyable and stress-free as possible. Whether you're in town for
+            work, leisure, or any other reason, we're dedicated to providing you
+            with a comfortable and memorable experience. */}
           </p>
 
           <div className="m-8 md:mb-0 md:mx-0 mx-auto md:mr-auto flex flex-wrap gap-4 text-center w-2/3 md:w-[256px] lg:w-[400px]">

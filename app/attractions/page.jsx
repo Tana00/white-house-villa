@@ -36,6 +36,9 @@ import Experience2 from "../../public/assets/gallery/experience2.jpeg";
 import Workshop from "../../public/assets/gallery/workshop.jpeg";
 import Workshop1 from "../../public/assets/gallery/workshop1.jpeg";
 import Workshop2 from "../../public/assets/gallery/workshop2.jpeg";
+import NotthinghamCastle from "../../public/assets/gallery/nottingham-castle.webp";
+import NotthinghamCastle1 from "../../public/assets/gallery/nottingham-castle2.webp";
+import NotthinghamCastle2 from "../../public/assets/gallery/nottingham-castle3.webp";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 
@@ -79,21 +82,21 @@ const attractionList = [
     id: 6,
     images: [Robinhood, Robinhood1, Robinhood2],
     title: "The Robin Hood Experience",
-    type: "Visit the only attraction in the City of Nottingham Dedicated solely to our World Famous Outlaw Hero! Travel back in time through our immersive walk-through in the shadow of Nottingham Castle and experience the sights, sounds and smells of Medieval Nottingham! ",
+    type: "Nottingham is synonymous with the legendary outlaw, Robin Hood. The city's forests and landmarks are closely tied to the tales of this heroic figure who famously 'stole from the rich to give to the poor.'",
     rating: "4.0",
   },
   {
     id: 7,
     images: [Ground, Ground1, Ground2],
     title: "The City Ground",
-    type: "Stadium",
+    type: "The City Ground is a football stadium in West Bridgford, Nottinghamshire, England, on the banks of the River Trent. It has been home to Nottingham Forest since 1898 and has a capacity of 30,455. The stadium was a venue when England hosted UEFA Euro 1996.",
     rating: "4.5",
   },
   {
     id: 8,
     images: [Market, Market1, Market2],
     title: "Old Market Square",
-    type: "Historic Site",
+    type: "This historic district in Nottingham was once the heart of the world's lace industry. Today, it is a trendy area filled with boutique shops, bars, and restaurants. The architecture reflects the city&#39;s industrial past, with stunning red-brick warehouses and former lace factories.",
     rating: "4.0",
   },
   {
@@ -114,8 +117,15 @@ const attractionList = [
     id: 11,
     images: [PlayHouse, PlayHouse1, PlayHouse2],
     title: "Nottingham Play House",
-    type: "Theatre",
+    type: "Nottingham Playhouse is a theatre in Nottingham, Nottinghamshire, England. It was first established as a repertory theatre in 1948 when it operated from a former cinema in Goldsmith Street. Directors during this period included Val May and Frank Dunlop. The current building opened in 1963.",
     rating: "4.5",
+  },
+  {
+    id: 12,
+    images: [NotthinghamCastle, NotthinghamCastle1, NotthinghamCastle2],
+    title: "Nottingham Castle:",
+    type: "A prominent feature in the city&#39;s skyline, Nottingham Castle has a history dating back to the 11th century. It has served as a royal residence, a stronghold, and now as a museum. It offers a fascinating glimpse into the city's historical and artistic heritage.",
+    rating: "5.0",
   },
 ];
 
@@ -126,22 +136,47 @@ const Attractions = () => {
       <section>
         <div className="bg-[#F3FBF7] w-full h-full justify-center py-20 md:py-[180px]">
           <div className="flex flex-1 w-full mx-auto text-center px-4 md:px-20 flex-col gap-6 items-center justify-center h-full text-[#040C07] mt-20 md:mt-0">
-            <h1 className="text-4xl md:text-[4rem] font-semibold text-[#040C07]">
+            <h1 className="text-4xl md:text-[3.5rem] font-semibold text-[#040C07]">
               Attractions
             </h1>
-            <p className="text-sm sm:text-lg font-medium px-4 md:px-32 text-[#040C07]">
-              Welcome to a world of exploration and discovery. White House Villa
-              is brimming with captivating attractions that cater to every
-              interest and age group. From historical landmarks to natural
-              wonders, cultural treasures to family-friendly adventures, there's
-              something here for everyone.
+            <p className="text-sm sm:text-[18px] leading-8 font-normal px-4 md:px-32 text-[#040C07] mx-4 sm:mx-10">
+              Welcome to a world of exploration and discovery. Nottingham is
+              brimming with captivating attractions that cater to every interest
+              and age group. From historical landmarks to natural wonders,
+              cultural treasures to family-friendly adventures, there's
+              something here for everyone. Mapperley is a vibrant neighborhood
+              in Nottingham, offering a unique blend of urban and suburban
+              living. As you explore this charming area, you'll find plenty of
+              activities and attractions to keep you engaged
             </p>
           </div>
         </div>
-        <div className="w-11/12 xl:w-4/5 2xl:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 my-20 mx-auto">
+        {/* <div className="w-11/12 xl:w-4/5 2xl:w-3/4 mx-auto text-center my-20">
+          <h3 className="text-center text-2xl md:text-3xl font-semibold mt-2 text-[#040C07]">
+            Local Attractions
+          </h3>
+          <p className="text-xl leading-7 text-[#484848] mt-6">
+            Mapperley is a vibrant neighborhood in Nottingham, offering a unique
+            blend of urban and suburban living. As you explore this charming
+            area, you'll find plenty of activities and attractions to keep you
+            engaged:
+          </p>
+        </div> */}
+        <div className="w-11/12 xl:w-4/5 2xl:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 mt-20 mb-36 mx-auto">
           {attractionList?.map((site, siteIndex) => (
             <Carousel key={siteIndex} site={site} />
           ))}
+        </div>
+        <div className="bg-[#ebf0ee] w-full md:mt-10 p-10 md:p-20 text-center">
+          <p className="text-xl leading-10 text-[#484848] w-full md:w-10/12 mx-auto">
+            As you explore Nottingham, you'll uncover a city that seamlessly
+            blends its historical charm with modern vibrancy. It's a place where
+            legends, industry, and culture converge, offering a truly unique and
+            engaging experience for all visitors. We hope this additional
+            information about local attractions and Nottingham's history
+            enhances your website content and helps potential guests appreciate
+            the cultural richness and diversity of the area.
+          </p>
         </div>
       </section>
       <Footer />

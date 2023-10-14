@@ -61,8 +61,9 @@ const FAQ = () => {
                 Any Questions? Look Here
               </h2>
               <p className="text-base text-body-color px-4 md:px-0">
-                There are many variations of passages of Lorem Ipsum available
-                but the majority have suffered alteration in some form.
+                Quick answers to common questions about our apartments. Find
+                info on booking, amenities, and more. Need help? Contact our
+                friendly support team. Enjoy your stay!
               </p>
             </div>
           </div>

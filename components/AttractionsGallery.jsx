@@ -26,7 +26,9 @@ const Carousel = ({ site }) => {
             {site?.images.map((image, index) => (
               <div
                 key={index}
-                className={`keen-slider__slide number-slide${index + 1} `}
+                className={`keen-slider__slide number-slide${
+                  index + 1
+                } w-full `}
               >
                 <Image
                   src={image}

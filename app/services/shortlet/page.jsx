@@ -14,8 +14,9 @@ const Shortlet = () => {
             </h1>
 
             <p className="m-4 md:mb-0 md:mx-0 max-w-lg sm:text-xl/relaxed">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-              illo tenetur fuga ducimus numquam ea!
+              At White House Villa, we're passionate about connecting travelers
+              with unique accommodations and experiences around the world. Are
+              you a guest seeking memorable stays, our platform has you covered.
             </p>
 
             <div className="m-8 md:mb-0 md:mx-0 flex flex-wrap gap-4 text-center">
@@ -89,22 +90,35 @@ const Shortlet = () => {
         </div>
         <div className="text-left w-4/5 sm:w-full mx-auto md:pl-10 my-8 md:mt-0">
           <p className="text-left text-sm font-semibold text-primary-green uppercase">
-            Why Us
+            Why Choose Us
           </p>
           <h3 className="text-left text-3xl md:text-4xl font-semibold mt-2 text-[#040C07]">
             Why White House Villa
           </h3>
-          <p className="text-[16px] leading-7 text-[#484848] my-6">
-            Nestled in the heart of Notts, our charming home is the perfect
-            retreat for your stay in NG3 6EJ. Whether you're here for business
-            or leisure, our well-designed space promises a memorable stay.
+          <p className="text-[16px] leading-7 text-[#484848] mt-6">
+            Our range of accommodations has been carefully curated to cater to
+            the diverse needs of our guests. We offer:
           </p>
-          <p className="text-[16px] leading-7 text-[#484848]">
-            Our spacious 3 bedroom, 1 bathroom home is designed to make you feel
-            right at home. The tastefully decorated living area is ideal for
-            relaxing after a day of exploring Nottingham's attractions. You'll
-            also find a fully equipped kitchen with modern appliances, making it
-            easy to whip up a delicious meal.
+          <ul className="list-disc ml-6 my-4 text-base text-[#484848]">
+            <li className="my-2">
+              <strong>Studios:</strong> Ideal for solo travelers or couples
+              seeking a cozy retreat.
+            </li>
+            <li className="my-2">
+              <strong>One-Bedroom Apartments: </strong>Perfect for small
+              families or those who desire a bit more space.
+            </li>
+            <li className="my-2">
+              <strong>Two-Bedroom Apartments:</strong> Spacious and suitable for
+              larger families or groups.
+            </li>
+          </ul>
+          <p className="text-[16px] leading-7 text-[#484848] mt-2">
+            Each unit is tastefully furnished and equipped with modern
+            amenities, ensuring you have everything you need for a relaxing and
+            enjoyable stay. Our fully-equipped kitchens enable you to prepare
+            your meals or snacks, just as you would at home, giving you the
+            freedom to dine at your own pace.
           </p>
         </div>
       </div>
