@@ -4,10 +4,9 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
-import logo from "../public/assets/logo3.png";
+import logo from "../public/assets/logo.png";
 import shortletIcon from "../public/assets/shortlet.svg";
 import dressingIcon from "../public/assets/dressing.svg";
-import photoshootIcon from "../public/assets/photo-shoot.svg";
 import aboutUsIcon from "../public/assets/about-us.svg";
 import howItWorksIcon from "../public/assets/how-it-works.svg";
 
@@ -22,11 +21,6 @@ const servicesMenu = [
     icon: dressingIcon,
     href: "dressing",
   },
-  // {
-  //   label: "Training",
-  //   icon: photoshootIcon,
-  //   href: "/home",
-  // },
 ];
 
 const companyMenu = [
@@ -128,9 +122,6 @@ const Nav = () => {
   };
 
   const includesAny = pathname?.includes("services");
-  // ||
-  // pathname?.includes("dressing") ||
-  // pathname?.includes("photo-shoot");
 
   return (
     <nav
@@ -199,7 +190,6 @@ const Nav = () => {
                     <li key={i} className="relative">
                       <Link href={`/services/${menu?.href}`}>
                         <p
-                          // href={`/${menu?.href}`}
                           className={`${
                             pathname?.includes(menu?.href)
                               ? "text-[#226E46] font-medium"
@@ -211,7 +201,6 @@ const Nav = () => {
                             alt={menu?.label}
                             width={20}
                             height={20}
-                            // placeholder="blur"
                           />
                           <span className="text-inherit flex-1 pl-4">
                             {menu?.label}
@@ -277,7 +266,6 @@ const Nav = () => {
                           alt={menu?.label}
                           width={20}
                           height={20}
-                          // placeholder="blur"
                         />
                         <span className="text-inherit flex-1 pl-4">
                           {menu?.label}
@@ -305,7 +293,6 @@ const Nav = () => {
           <li>
             <Link href="/attractions">
               <p
-                // href="/attractions"
                 className={`${
                   pathname === "/attractions"
                     ? "text-primary-green"
@@ -401,7 +388,6 @@ const Nav = () => {
                 dropdowns?.services ? "block" : "hidden"
               } top-auto left-0 min-w-full w-52 z-30 mt-1`}
             >
-              {/* <span className="absolute top-0 left-0 w-3 h-3 bg-white border transform rotate-45 -mt-1 ml-6"></span> */}
               <div className="bg-white rounded w-full relative z-10 py-1">
                 <ul className="list-reset p-2">
                   {servicesMenu?.map((menu, i) => (
@@ -419,7 +405,6 @@ const Nav = () => {
                             alt={menu?.label}
                             width={20}
                             height={20}
-                            // placeholder="blur"
                           />
                           <span className="text-inherit flex-1 pl-4">
                             {menu?.label}
@@ -460,7 +445,6 @@ const Nav = () => {
                 dropdowns?.company ? "block" : "hidden"
               } top-auto left-0 min-w-full w-44 z-30 mt-1`}
             >
-              {/* <span className="absolute top-0 left-0 w-3 h-3 bg-white border transform rotate-45 -mt-1 ml-6"></span> */}
               <div className="bg-white rounded w-full relative z-10 py-1">
                 <ul className="list-reset p-2">
                   {companyMenu?.map((menu, i) => (
@@ -485,7 +469,6 @@ const Nav = () => {
                           alt={menu?.label}
                           width={20}
                           height={20}
-                          // placeholder="blur"
                         />
                         <span className="text-inherit flex-1 pl-4">
                           {menu?.label}
@@ -497,17 +480,6 @@ const Nav = () => {
               </div>
             </div>
           </li>
-          {/* <a
-          href="#about"
-          onClick={() => scrollToSection("about")}
-          className={`${
-            activeSection === "about"
-              ? "text-primary-green"
-              : "text-[#040C07] hover:text-primary-green"
-          } px-4`}
-        >
-          About Us
-        </a> */}
           <li className="border-b border-gray-200 pb-2">
             <a
               href="/#explore"

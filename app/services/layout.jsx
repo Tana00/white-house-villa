@@ -17,7 +17,6 @@ const ServicesLayout = ({ children }) => {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
         {/* Add more meta tags if needed */}
       </head>
 

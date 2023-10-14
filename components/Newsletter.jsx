@@ -41,7 +41,6 @@ const Newsletter = () => {
             <button
               type="submit"
               className="w-[200px] h-12 rounded-md bg-primary-green rounded-r-md text-white"
-              // onClick={handleSubmit}
             >
               Subscribe
             </button>

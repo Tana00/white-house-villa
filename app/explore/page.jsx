@@ -89,11 +89,6 @@ export const features = [
 ];
 
 const Explore = () => {
-  // const [dropdownOpen, setDropdownOpen] = useState(false);
-  // const [activeGuestNumber, setActiveGuestNumber] = useState();
-
-  // const guestDropdown = [1, 2, 3];
-
   return (
     <div className=" flex flex-col w-full min-h-screen items-center justify-start bg-white">
       {/*  Headline text */}
@@ -162,22 +157,7 @@ const Explore = () => {
             <p className="text-[#484848] text-[1.125rem]">
               Mapperley, United Kingdom
             </p>
-            {/* <p className="flex items-center gap-1 text-lg">
-              <span className="text-primary-green">
-                {" "}
-                <BsFillEyeFill className="w-6 h-6" />
-              </span>
-              0
-            </p> */}
           </div>
-          {/* <div className="flex items-center gap-1 mt-4">
-            <BsFillStarFill className="w-4 h-4 text-yellow-500" />
-            <BsFillStarFill className="w-4 h-4 text-yellow-500" />
-            <BsFillStarFill className="w-4 h-4 text-yellow-500" />
-            <BsFillStarFill className="w-4 h-4 text-yellow-500" />
-            <BsFillStarFill className="w-4 h-4 text-slate-400" />
-            <span>4.5</span>
-          </div> */}
         </div>
         <hr className="my-4" />
 
@@ -225,75 +205,6 @@ const Explore = () => {
                   <div className="mx-4 text-[#484848] font-semibold">Or</div>
                   <div className="border-t border-[#226E4633] w-full"></div>
                 </div>
-                {/* <p className="text-[#040C07] text-base mt-4">Number of Guests</p>
-              <div
-                onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="relative flex items-center justify-between w-full h-12 bg-white rounded-md mt-2 text-sm px-4 cursor-pointer"
-              >
-                <span>{!activeGuestNumber ? "Select" : activeGuestNumber}</span>
-                <svg
-                  width="16"
-                  height="10"
-                  viewBox="0 0 16 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="cursor-pointer"
-                >
-                  <mask
-                    id="mask0_56_10276"
-                    // style="mask-type:luminance"
-                    maskUnits="userSpaceOnUse"
-                    x="0"
-                    y="0"
-                    width="16"
-                    height="10"
-                  >
-                    <path
-                      d="M14 2L8 8L2 2H14Z"
-                      fill="white"
-                      stroke="white"
-                      stroke-width="4"
-                      stroke-linejoin="round"
-                    />
-                  </mask>
-                  <g mask="url(#mask0_56_10276)">
-                    <path d="M-4 -7.5H20V16.5H-4V-7.5Z" fill="black" />
-                  </g>
-                </svg>
-              </div>
-              <div
-                className={`${
-                  dropdownOpen ? "block" : "hidden"
-                } bg-white shadow-md rounded-2xl border border-gray-300 text-sm absolute top-auto left-0 w-[340px] ml-8 z-30 mt-1`}
-              >
-                <span className="absolute top-0 left-0 w-3 h-3 bg-white border transform rotate-45 -mt-1 ml-6"></span>
-                <div className="bg-white rounded w-full relative z-10 py-1">
-                  <ul className="list-reset py-2">
-                    {[1, 2, 3]?.map((num, i) => (
-                      <li
-                        key={i}
-                        className="relative"
-                        onClick={() => {
-                          setActiveGuestNumber(num);
-                          setDropdownOpen(false);
-                        }}
-                      >
-                        <p
-                          className={`${
-                            guestDropdown === num
-                              ? "text-[#226E46] font-medium"
-                              : "text-[#040C07]"
-                          } px-5 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer`}
-                        >
-                          <span className="text-inherit flex-1 pl-4">
-                            {num}
-                          </span>
-                        </p>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div> */}
                 <p className="text-[#040C07] font-medium text-base mb-2 w-full">
                   Book on
                 </p>

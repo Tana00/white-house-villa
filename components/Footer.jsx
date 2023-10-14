@@ -1,12 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-// import { GrFacebookOption, GrTwitter } from "react-icons/gr";
-// import { IoLogoInstagram } from "react-icons/io";
-// import { BiLogoLinkedin } from "react-icons/bi";
 import { LuMapPin } from "react-icons/lu";
 import { BsPhone } from "react-icons/bs";
-import logo from "../public/assets/logo3.png";
+import logo from "../public/assets/logo.png";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -20,18 +17,10 @@ const Footer = () => {
               className="relative w-[88px] h-[71px] md:w-[88px] md:h-[71px]"
               alt="White house chosen"
               src={logo}
-              // placeholder="blur"
             />
             <p className="">Your Home Away From Home</p>
           </div>
-          <div className="flex gap-4">
-            {/* <GrFacebookOption className="w-10 h-10 bg-primary-green text-white p-2 rounded-full hover:text-green-400 hover:transition duration-300 ease-in-out" />
-            <GrTwitter className="w-10 h-10 bg-primary-green text-white p-2 rounded-full hover:text-green-400 hover:transition duration-300 ease-in-out" />
-            <IoLogoInstagram className="w-10 h-10 bg-primary-green text-white p-2 rounded-full hover:text-green-400 hover:transition duration-300 ease-in-out" />
-            <BiLogoLinkedin className="w-10 h-10 bg-primary-green text-white p-2 rounded-full hover:text-green-400 hover:transition duration-300 ease-in-out" /> */}
-          </div>
         </div>
-        {/* <div className="flex sm:flex-row flex-col justify-between gap-12 md:gap-32 mt-8 md:mt-0"> */}
         <div className="flex flex-col">
           <h4 className="text-[1.125rem] font-medium">Quick Links</h4>
 
@@ -66,12 +55,6 @@ const Footer = () => {
             >
               Privacy Policy
             </Link>
-            {/* <Link href="/explore" className="text-[#484848] text-lg">
-                Explore
-              </Link>
-              <Link href="/contact" className="text-[#484848] text-lg">
-                Contact Us
-              </Link> */}
           </div>
         </div>
         <div className="flex flex-col">
@@ -118,23 +101,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      {/* </div> */}
       <div className="flex flex-col md:w-4/5 mx-auto w-full">
         <div className="h-[1px] bg-[#bababa] mt-8"></div>
         <div className="flex justify-center items-center ">
           <p className="text-[#484848] text-[14px] mt-1">
             © {year} White House Villa. All rights reserved
           </p>
-          {/* <div className="flex items-center  gap-6">
-            <Link href="/terms" className="text-[#484848] text-[14px] mt-2">
-              {" "}
-              Terms of Service
-            </Link>
-            <Link href="/privacy" className="text-[#484848] text-[14px] mt-2">
-              {" "}
-              Privacy Policy
-            </Link>
-          </div> */}
         </div>
       </div>
     </div>

@@ -24,13 +24,7 @@ const About = () => {
         </p>
       </div>
       <div className=" flex flex-1 flex-col gap-8 md:w-4/5 justify-center items-center text-center bg-white rounded-md p-8">
-        <Image
-          src={guest}
-          alt="guest"
-          width={90}
-          height={90}
-          // placeholder="blur"
-        />
+        <Image src={guest} alt="guest" width={90} height={90} />
         <h4 className="text-[1.5rem] font-semibold text-black">For Guests</h4>
         <p className="home-text text-sm sm:text-[1.125rem] mt-[-30px] text-[#484848]">
           Whitehouse Villas is your premier choice for a home away from home in

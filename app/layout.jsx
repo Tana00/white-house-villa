@@ -1,14 +1,12 @@
-import Script from "next/script";
-import Newsletter from "@/components/Newsletter";
 import "../styles/globals.css";
 import Nav from "@/components/Nav";
-import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "White House Villa",
-  description: "Your home away from home",
+  title: "Luxury Airbnb Apartments in Nottingham | Short-Term Rentals",
+  description:
+    "Discover the best Airbnb apartments in Nottingham for your short-term stay. Our luxury rentals offer comfort and convenience in prime locations. Book your perfect accommodation now!",
   keywords:
-    "villa, white house, home away from home, shortlet, airbnb, bookings.com",
+    "Airbnb Nottingham, bookings.com apartments, luxury apartment in Mapperley Nottingham, short-term rentals, luxury apartments, holiday flats, Nottingham city center, self-catering accommodation, vacation homes, modern serviced apartments, weekend getaways, cozy rentals",
 };
 
 const RootLayout = ({ children }) => {
@@ -18,25 +16,11 @@ const RootLayout = ({ children }) => {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
-
-        {/* <!-- Google tag (gtag.js) --> */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-P52QKLDNMS" />
-        <Script id="google-analytics">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-P52QKLDNMS');
-        `}
-        </Script>
       </head>
 
       <body>
         <Nav />
         {children}
-        {/* <Newsletter /> */}
-        {/* <Footer /> */}
       </body>
     </html>
   );
